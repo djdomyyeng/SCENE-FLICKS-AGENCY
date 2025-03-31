@@ -5,7 +5,7 @@
  * @license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 or Later
  */
 body, .sp-preloader {
-  background-color: #ff8800;
+  background-color: #ffffff;
   color: #ff8800;
 }
 .sp-preloader > div {
@@ -15,7 +15,7 @@ body, .sp-preloader {
   background: #fff;
 }
 #sp-top-bar {
-  background: rgba(18, 19, 48, .8);
+  background: #331b00;
   color: #ff8800;
 }
 #sp-top-bar a {
