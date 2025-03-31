@@ -1,0 +1,293 @@
+/**
+ * @package Helix Ultimate Framework
+ * @author JoomShaper https://www.joomshaper.com
+ * @copyright Copyright (c) 2010 - 2018 JoomShaper
+ * @license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 or Later
+ */
+body, .sp-preloader {
+  background-color: #ff8800;
+  color: #ff8800;
+}
+.sp-preloader > div {
+  background: #ff8800;
+}
+.sp-preloader > div:after {
+  background: #fff;
+}
+#sp-top-bar {
+  background: rgba(18, 19, 48, .8);
+  color: #ff8800;
+}
+#sp-top-bar a {
+  color: #ff8800;
+}
+a {
+  color: #ff8800;
+}
+a:hover, a:focus, a:active {
+  color: #ff8800;
+}
+.tags > li {
+  display: inline-block;
+}
+.tags > li a {
+  background: rgba(166, 124, 0, 0.1);
+  color: #ff8800;
+}
+.tags > li a:hover {
+  background: #6d5202;
+}
+.article-social-share .social-share-icon ul li a {
+  color: #ff8800;
+}
+.article-social-share .social-share-icon ul li a:hover, .article-social-share .social-share-icon ul li a:focus {
+  background: #ff8800;
+}
+.sp-megamenu-parent > li > a {
+  color: #ff8800;
+}
+.sp-megamenu-parent > li:hover > a {
+  color: #ff8800;
+}
+.sp-megamenu-parent > li.active > a, .sp-megamenu-parent > li.active:hover > a {
+  color: #ff8800;
+}
+.sp-megamenu-parent .sp-dropdown .sp-dropdown-inner {
+  background: #252525;
+}
+.sp-megamenu-parent .sp-dropdown li.sp-menu-item > a {
+  color: #ff8800;
+}
+.sp-megamenu-parent .sp-dropdown li.sp-menu-item > a:hover {
+  color: #ff8800;
+}
+.sp-megamenu-parent .sp-dropdown li.sp-menu-item.active > a {
+  color: #ff8800;
+}
+.sp-megamenu-parent .sp-mega-group > li > a {
+  color: #ff8800;
+}
+#offcanvas-toggler > .fa {
+  color: #ff8800;
+}
+#offcanvas-toggler > .fa:hover, #offcanvas-toggler > .fa:focus, #offcanvas-toggler > .fa:active {
+  color: #ff8800;
+}
+.offcanvas-menu {
+  background-color: #ffffff;
+  color: #ff8800;
+}
+.offcanvas-menu .offcanvas-inner .sp-module ul > li a, .offcanvas-menu .offcanvas-inner .sp-module ul > li span {
+  color: #ff8800;
+}
+.offcanvas-menu .offcanvas-inner .sp-module ul > li a:hover, .offcanvas-menu .offcanvas-inner .sp-module ul > li span:hover, .offcanvas-menu .offcanvas-inner .sp-module ul > li a:focus, .offcanvas-menu .offcanvas-inner .sp-module ul > li span:focus {
+  color: #ff8800;
+}
+.offcanvas-menu .offcanvas-inner .sp-module ul > li.menu-parent > a > .menu-toggler, .offcanvas-menu .offcanvas-inner .sp-module ul > li.menu-parent > .menu-separator > .menu-toggler {
+  color: rgba(245, 245, 245, 0.5);
+}
+.offcanvas-menu .offcanvas-inner .sp-module ul > li ul li a {
+  color: rgba(245, 245, 245, 0.8);
+}
+.btn-primary, .sppb-btn-primary {
+  border-color: #ff8800;
+  background-color: #ff8800;
+}
+.btn-primary:hover, .sppb-btn-primary:hover {
+  border-color: #ff8800;
+  background-color: #ff8800;
+}
+ul.social-icons > li a:hover {
+  color: #ff8800;
+}
+.sp-page-title {
+  background-color: #ff8800;
+}
+.layout-boxed .body-innerwrapper {
+  background: #fff;
+}
+.sp-module ul > li > a {
+  color: #ff8800;
+}
+.sp-module ul > li > a:hover {
+  color: #ff8800;
+}
+.sp-module .latestnews > div > a {
+  color: #ff8800;
+}
+.sp-module .latestnews > div > a:hover {
+  color: #ff8800;
+}
+.sp-module .tagscloud .tag-name:hover {
+  background: #ff8800;
+}
+.search .btn-toolbar button {
+  background: #ff8800;
+}
+#sp-footer, #sp-bottom {
+  background: #171717;
+  color: #ff8800;
+}
+#sp-footer a, #sp-bottom a {
+  color: #ff8800;
+}
+#sp-footer a:hover, #sp-bottom a:hover, #sp-footer a:active, #sp-bottom a:active, #sp-footer a:focus, #sp-bottom a:focus {
+  color: #ff8800;
+}
+#sp-bottom .sp-module-content .latestnews > li > a > span {
+  color: #ff8800;
+}
+.sp-comingsoon body {
+  background-color: #ff8800;
+}
+.pagination > li > a, .pagination > li > span {
+  color: #ff8800;
+}
+.pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus {
+  color: #ff8800;
+}
+.pagination > .active > a, .pagination > .active > span {
+  border-color: #ff8800;
+  background-color: #ff8800;
+}
+.pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+  border-color: #ff8800;
+  background-color: #ff8800;
+}
+.error-code, .coming-soon-number {
+  color: #ff8800;
+}
+
+
+img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Pop-out shadow */
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+
+body {
+    background-color: #ffffff !important; /* Set background to white */
+    font-family: 'Poppins', sans-serif; /* Modern font */
+}
+
+.navbar, .footer {
+    background: linear-gradient(90deg, #8B0000, #ff8800); /* Futuristic navbar & footer */
+}
+
+button, .btn {
+    transition: all 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    transform: scale(1.05); /* Interactive hover effect */
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px; /* Better mobile responsiveness */
+    }
+}
+
+
+body {
+    background-color: #ffffff !important; /* Maintain white background */
+    color: #000000 !important; /* Ensure black text for readability */
+    font-family: 'Poppins', sans-serif; /* Modern, professional font */
+}
+
+.navbar, .footer {
+    background: #ffffff !important; /* Clean white navbar & footer */
+    color: #000000 !important;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+a {
+    color: #8B0000; /* Dark red for link contrast */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff8800; /* Gold hover effect for elegance */
+}
+
+button, .btn {
+    background-color: #8B0000; /* Dark red buttons */
+    color: #ffffff !important; /* White text for contrast */
+    border-radius: 8px; /* Modern button design */
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background-color: #ff8800; /* Gold hover effect */
+    color: #000000 !important;
+    transform: scale(1.05);
+}
+
+
+body {
+    background-color: #ffffff !important; /* Pure white background */
+    color: #000000 !important; /* Black text for clear readability */
+    font-family: 'Poppins', sans-serif; /* Sleek modern font */
+}
+
+.navbar, .footer {
+    background: #ffffff !important; /* No yellow or gold, just white */
+    color: #000000 !important;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Minimalist shadow */
+}
+
+a {
+    color: #8B0000; /* Dark red for a professional touch */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #333333; /* Subtle dark gray hover effect */
+}
+
+button, .btn {
+    background-color: #8B0000; /* Dark red for buttons */
+    color: #ffffff !important; /* White text for contrast */
+    border-radius: 6px; /* Modern button shape */
+    padding: 10px 14px;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover, .btn:hover {
+    background-color: #5A0000; /* Darker red on hover */
+    transform: scale(1.03);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo {
+    max-width: 150px !important; /* Fix logo size to be reasonable on mobile */
+}
+
+@media (max-width: 768px) {
+    .logo {
+        max-width: 120px !important; /* Smaller logo for phones */
+    }
+}

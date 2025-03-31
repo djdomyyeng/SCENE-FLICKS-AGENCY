@@ -1,0 +1,207 @@
+/* Events List - Grid Layout*/
+@media (max-width: 900px) {
+  div#events .item-container {
+    width: 50%;
+  }
+}
+@media (max-width: 450px) {
+  div#events .item-container {
+    width: 100%;
+  }
+}
+/* Events List - Tiles Layout */
+@media (max-width: 900px) {
+  .eventgallery-tiles-list .eventgallery-tiles .eventgallery-tile {
+    width: 50%;
+  }
+}
+@media (max-width: 450px) {
+  .eventgallery-tiles-list .eventgallery-tiles .eventgallery-tile {
+    width: 100%;
+  }
+}
+/* Event List - Grid Layout */
+@media (max-width: 900px) {
+  #event .eventgallery-simplelist-tile {
+    width: 50%;
+  }
+}
+@media (max-width: 450px) {
+  #event .eventgallery-simplelist-tile {
+    width: 100%;
+  }
+}
+/* Event List - Square Layout */
+@media (max-width: 900px) {
+  #event .eventgallery-square {
+    width: 50%;
+  }
+}
+@media (max-width: 450px) {
+  #event .eventgallery-square {
+    width: 100%;
+  }
+}
+/* Event List - Tiles Layout */
+@media (max-width: 900px) {
+  #event .eventgallery-tile {
+    width: 50%;
+  }
+}
+@media (max-width: 450px) {
+  #event .eventgallery-tile {
+    width: 100%;
+  }
+}
+/* Category List - Tiles Layout */
+@media (min-width: 1200px) {
+  .eventgallery-subcategories .item-container {
+    width: 20%;
+  }
+}
+@media (max-width: 900px) {
+  .eventgallery-subcategories .item-container {
+    width: 33.333333%;
+  }
+}
+@media (max-width: 450px) {
+  .eventgallery-subcategories .item-container {
+    width: 50%;
+  }
+}
+
+
+/*# sourceMappingURL=responsive-static.css.map*/
+
+img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Pop-out shadow */
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+
+body {
+    background-color: #ffffff !important; /* Set background to white */
+    font-family: 'Poppins', sans-serif; /* Modern font */
+}
+
+.navbar, .footer {
+    background: linear-gradient(90deg, #8B0000, #ff8800); /* Futuristic navbar & footer */
+}
+
+button, .btn {
+    transition: all 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    transform: scale(1.05); /* Interactive hover effect */
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px; /* Better mobile responsiveness */
+    }
+}
+
+
+body {
+    background-color: #ffffff !important; /* Maintain white background */
+    color: #000000 !important; /* Ensure black text for readability */
+    font-family: 'Poppins', sans-serif; /* Modern, professional font */
+}
+
+.navbar, .footer {
+    background: #ffffff !important; /* Clean white navbar & footer */
+    color: #000000 !important;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+a {
+    color: #8B0000; /* Dark red for link contrast */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff8800; /* Gold hover effect for elegance */
+}
+
+button, .btn {
+    background-color: #8B0000; /* Dark red buttons */
+    color: #ffffff !important; /* White text for contrast */
+    border-radius: 8px; /* Modern button design */
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background-color: #ff8800; /* Gold hover effect */
+    color: #000000 !important;
+    transform: scale(1.05);
+}
+
+
+body {
+    background-color: #ffffff !important; /* Pure white background */
+    color: #000000 !important; /* Black text for clear readability */
+    font-family: 'Poppins', sans-serif; /* Sleek modern font */
+}
+
+.navbar, .footer {
+    background: #ffffff !important; /* No yellow or gold, just white */
+    color: #000000 !important;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Minimalist shadow */
+}
+
+a {
+    color: #8B0000; /* Dark red for a professional touch */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #333333; /* Subtle dark gray hover effect */
+}
+
+button, .btn {
+    background-color: #8B0000; /* Dark red for buttons */
+    color: #ffffff !important; /* White text for contrast */
+    border-radius: 6px; /* Modern button shape */
+    padding: 10px 14px;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover, .btn:hover {
+    background-color: #5A0000; /* Darker red on hover */
+    transform: scale(1.03);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo {
+    max-width: 150px !important; /* Fix logo size to be reasonable on mobile */
+}
+
+@media (max-width: 768px) {
+    .logo {
+        max-width: 120px !important; /* Smaller logo for phones */
+    }
+}

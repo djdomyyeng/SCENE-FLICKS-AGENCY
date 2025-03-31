@@ -1,0 +1,134 @@
+.com-media .well{min-height:20px;padding:19px;margin-bottom:20px;background-color: #ff8800;border:1px solid #e3e3e3;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-box-shadow:inset 0 1px 1px rgb(0 0 0 / 5%);-moz-box-shadow:inset 0 1px 1px rgba(0,0,0,.05);box-shadow:inset 0 1px 1px rgb(0 0 0 / 5%)}.com-media .row-fluid{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}.com-media .row-fluid [class*=span]{position:relative;width:100%;padding-right:15px;padding-left:15px}.com-media .span12{flex-basis:100%}.com-media .span11{flex-basis:91.48936170212765%}.com-media .span10{flex-basis:82.97872340425532%}.com-media .span9{flex-basis:74.46808510638297%}.com-media .span8{flex-basis:65.95744680851064%}.com-media .span7{flex-basis:57.44680851063829%}.com-media .span6{flex-basis:48.93617021276595%}.com-media .span5{flex-basis:40.42553191489362%}.com-media .span4{flex-basis:31.914893617021278%}.com-media .span3{flex-basis:23.404255319148934%}.com-media .span2{flex-basis:14.893617021276595%}.com-media .span1{flex-basis:6.382978723404255%}.com-media .thumbnails{list-style:none;padding:0;margin:-7.5px;display:flex;flex-wrap:wrap}.com-media .thumbnails-media .thumbnail{background-color: #ff8800;border-radius:3px;border:0;padding:0;height:100px;width:100px;margin:7.5px;position:relative;text-align:center;overflow:hidden;margin-bottom:18px;box-shadow:0 0 0 1px rgb(0 0 0 / 5%) inset}.com-media .height-50{height:50px}.com-media .thumbnails-media .thumbnail .imgFolder span{line-height:90px;font-size:38px;margin:0;width:auto}.com-media .thumbnails-media .thumbnail .icon-folder,.com-media .thumbnails-media .thumbnail .icon-folder-2{width:30px;height:20px;display:inline-block;margin:auto;position:relative;background-color: #ff8800;border-radius:0 3px 3px 3px;margin-bottom:-8px;margin-top:12px}.com-media .thumbnails-media .thumbnail .icon-folder-2:before,.com-media .thumbnails-media .thumbnail .icon-folder:before{content:'';width:50%;height:.2em;border-radius:0 20px 0 0;background-color: #ff8800;position:absolute;top:-.2em;left:0}.com-media .thumbnails-media .thumbnail .small{margin-top:15px}
+
+img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Pop-out shadow */
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+
+body {
+    background-color: #ffffff !important; /* Set background to white */
+    font-family: 'Poppins', sans-serif; /* Modern font */
+}
+
+.navbar, .footer {
+    background: linear-gradient(90deg, #8B0000, #ff8800); /* Futuristic navbar & footer */
+}
+
+button, .btn {
+    transition: all 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    transform: scale(1.05); /* Interactive hover effect */
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px; /* Better mobile responsiveness */
+    }
+}
+
+
+body {
+    background-color: #ffffff !important; /* Maintain white background */
+    color: #000000 !important; /* Ensure black text for readability */
+    font-family: 'Poppins', sans-serif; /* Modern, professional font */
+}
+
+.navbar, .footer {
+    background: #ffffff !important; /* Clean white navbar & footer */
+    color: #000000 !important;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+a {
+    color: #8B0000; /* Dark red for link contrast */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff8800; /* Gold hover effect for elegance */
+}
+
+button, .btn {
+    background-color: #8B0000; /* Dark red buttons */
+    color: #ffffff !important; /* White text for contrast */
+    border-radius: 8px; /* Modern button design */
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background-color: #ff8800; /* Gold hover effect */
+    color: #000000 !important;
+    transform: scale(1.05);
+}
+
+
+body {
+    background-color: #ffffff !important; /* Pure white background */
+    color: #000000 !important; /* Black text for clear readability */
+    font-family: 'Poppins', sans-serif; /* Sleek modern font */
+}
+
+.navbar, .footer {
+    background: #ffffff !important; /* No yellow or gold, just white */
+    color: #000000 !important;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Minimalist shadow */
+}
+
+a {
+    color: #8B0000; /* Dark red for a professional touch */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #333333; /* Subtle dark gray hover effect */
+}
+
+button, .btn {
+    background-color: #8B0000; /* Dark red for buttons */
+    color: #ffffff !important; /* White text for contrast */
+    border-radius: 6px; /* Modern button shape */
+    padding: 10px 14px;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover, .btn:hover {
+    background-color: #5A0000; /* Darker red on hover */
+    transform: scale(1.03);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo {
+    max-width: 150px !important; /* Fix logo size to be reasonable on mobile */
+}
+
+@media (max-width: 768px) {
+    .logo {
+        max-width: 120px !important; /* Smaller logo for phones */
+    }
+}
