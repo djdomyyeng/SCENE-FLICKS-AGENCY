@@ -1987,7 +1987,7 @@ input[type="text"]:not(.form-control):focus, input[type="email"]:not(.form-contr
   padding: 19px 5px;
   line-height: 3;
   letter-spacing: 1.4px;
-  color: rgba(255, 255, 255, .6) !important;
+  color: #ff8800 !important;
   margin: 0 18px;
 }
 .sp-megamenu-parent > li > a:hover, .sp-megamenu-parent > li > span:hover {
@@ -2532,7 +2532,7 @@ input[type="text"]:not(.form-control):focus, input[type="email"]:not(.form-contr
   letter-spacing: 1.5px !important;
 }
 .sppb-addon-person .sppb-person-information > span.sppb-person-designation {
-  color: #ff8800;
+  color: #000000;
 }
 .sppb-addon-person .sppb-person-social-icons {
   margin-left: 20px;
