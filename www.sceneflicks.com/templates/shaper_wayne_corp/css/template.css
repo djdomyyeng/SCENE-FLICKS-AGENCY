@@ -724,10 +724,10 @@ input[type="text"]:not(.form-control), input[type="email"]:not(.form-control), i
   font-size: 1rem;
   line-height: 1.25;
   color: #ff8800;
-  background-color: #ff8800;
+  background-color: #ffffff;
   background-image: none;
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, .15);
+  border: 1px solid rgb(0, 0, 0);
   border-radius: 0.25rem;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
@@ -2108,7 +2108,6 @@ input[type="text"]:not(.form-control):focus, input[type="email"]:not(.form-contr
 .sppb-btn.sppb-btn-primary {
   color: #ff8800;
   border: 1px solid #ff8800;
-  background-color: transparent;
 }
 .sppb-btn.sppb-btn-primary:hover {
   color: #ff8800;
