@@ -1967,7 +1967,7 @@ input[type="text"]:not(.form-control):focus, input[type="email"]:not(.form-contr
 }
 #sp-header {
   height: 80px;
-  background-color: transparent;
+  background-color: rgba(18, 19, 48, .95);
   border-bottom: 1px solid rgba(166, 124, 0, .3);
 }
 #sp-header #sp-menu2 .sp-megamenu-parent {

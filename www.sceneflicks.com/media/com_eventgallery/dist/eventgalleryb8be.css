@@ -969,7 +969,7 @@ div.pswp__img--placeholder,
   transition: opacity 0.2s 0.5s ease-out;
 }
 .eventgallery-lazyload-loading {
-  opacity: 0;
+  opacity: 100;
 }
 /* cart */
 .eventgallery-minicart {
