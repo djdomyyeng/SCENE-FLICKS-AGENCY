@@ -181,7 +181,8 @@ template="shaper_wayne_corp";
 				<section id="section-id-1542709301800" class="sppb-section hero-section sppb-section-content-center" ><div class="sppb-row-overlay"></div><div class="sppb-row-container"><div class="sppb-row sppb-align-center"><div class="sppb-col-md-12  " id="column-wrap-id-1542709301799"><div id="column-id-1542709301799" class="sppb-column  " ><div class="sppb-column-addons"><div id="sppb-addon-wrapper-1542709861050" class="sppb-addon-wrapper  addon-root-heading"><div id="sppb-addon-1542709861050" class="clearfix  "     ><div class="sppb-addon sppb-addon-header sppb-text-left"><h1 class="sppb-addon-title">THIS WEBSITE IS DESIGNED BY DJ DOMY YENG</h1></div></div></div><div id="sppb-addon-wrapper-1542867181995" class="sppb-addon-wrapper  addon-root-animated-heading"><div id="sppb-addon-1542867181995" class="clearfix  "     ><div class="sppb-addon sppb-addon-animated-heading sppb-text-left"><h2 class="sppb-addon-title animated-heading-text text-animation-flip"><span class="animated-text-words-wrapper"><span class="animated-text is-visible">a home away from home</span><span class="animated-text ">range of amazing cuisine options</span><span class="animated-text ">cozy accommodation options</span><span class="animated-text ">modern conferencing experience</span><span class="animated-text ">relaxing ambiance in the woods</span></span></h2></div></div></div><div id="sppb-addon-wrapper-1542709917009" class="sppb-addon-wrapper  addon-root-button"><div id="sppb-addon-1542709917009" class="clearfix  "     ><div class="sppb-button-wrapper"><a href="https://sceneflicks.com/book/"   id="btn-1542709917009"  class="sppb-btn  sppb-btn-default sppb-btn-rounded">
 					Book Your Stay <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></div>
 
-	<!-- Button to explore the services -->
+
+<!-- Button to explore the services -->
 <button id="exploreBtn" onclick="showExploreContent()">Explore Our Services</button>
 
 <!-- Hidden content sections (Booking Form and Restaurant Menu) -->
@@ -194,87 +195,86 @@ template="shaper_wayne_corp";
         <input type="date" id="checkInDate" placeholder="Check-in Date" />
         <input type="date" id="checkOutDate" placeholder="Check-out Date" />
         <input type="email" id="userEmail" placeholder="Your Email" />
-        <button onclick="sendBookingEmail()">Check Availability</button>
+        <select id="roomType">
+            <option>Deluxe - KES 10,000</option>
+            <option>Cottage - KES 15,000</option>
+            <option>Standard - KES 7,500</option>
+            <option>Executive - KES 20,000</option>
+        </select>
+        <select id="boardPlan">
+            <option>Full Board</option>
+            <option>Half Board</option>
+            <option>Bed Only</option>
+        </select>
     </section>
 
     <!-- Restaurant Menu Section -->
     <section class="restaurant-menu">
         <h2>Restaurant Menu</h2>
         <select id="menuItems">
-            <option>Grilled Chicken</option>
-            <option>Vegetarian Pasta</option>
-            <option>Beef Steak</option>
-            <option>Seafood Platter</option>
-            <option>Local Kenyan Dish</option>
-            <option>Fried Tilapia</option>
-            <option>Nyama Choma</option>
-            <option>Chapati and Beans</option>
-            <option>Pilau</option>
-            <option>Goat Stew</option>
-            <option>Matoke</option>
-            <option>Ugali and Sukuma</option>
-            <option>French Fries</option>
-            <option>Cheeseburger</option>
-            <option>Club Sandwich</option>
-            <option>Pineapple Juice</option>
-            <option>Mango Smoothie</option>
-            <option>Strawberry Milkshake</option>
+            <optgroup label="Breakfast">
+                <option>Omelette - KES 400 (Eggs, cheese, onions, tomatoes)</option>
+                <option>Pancakes - KES 500 (Served with honey & fruits)</option>
+                <option>Full English Breakfast - KES 1,200 (Eggs, sausages, bacon, toast, beans)</option>
+            </optgroup>
+            <optgroup label="Lunch">
+                <option>Nyama Choma - KES 1,500 (Grilled beef/goat with Ugali & Kachumbari)</option>
+                <option>Chicken Biryani - KES 1,200 (Spiced rice with marinated chicken)</option>
+                <option>Vegetarian Pizza - KES 1,000 (Cheese, mushrooms, capsicum, tomatoes)</option>
+            </optgroup>
+            <optgroup label="Dinner">
+                <option>Grilled Salmon - KES 2,500 (Served with mashed potatoes & vegetables)</option>
+                <option>Beef Steak - KES 2,000 (Served with creamy pepper sauce)</option>
+                <option>Pilau - KES 1,000 (Spiced rice with beef and onions)</option>
+            </optgroup>
+            <optgroup label="Buffets & Platters">
+                <option>Seafood Platter - KES 3,000 (Prawns, calamari, fish, served with rice)</option>
+                <option>Mixed Grill - KES 2,500 (Lamb, beef, chicken, served with mashed potatoes)</option>
+            </optgroup>
+            <optgroup label="International Cuisine">
+                <option>Pasta Carbonara - KES 1,500 (Creamy sauce with bacon & parmesan cheese)</option>
+                <option>Cheeseburger - KES 800 (Beef patty, cheese, lettuce, tomato, pickles)</option>
+            </optgroup>
         </select>
         <input type="number" id="menuQuantity" placeholder="Quantity" />
-        <input type="email" id="orderEmail" placeholder="Your Email" />
-        <button onclick="sendOrderEmail()">Place Order</button>
     </section>
+
+    <button onclick="sendBookingAndOrderEmail()">Send Email</button>
 </div>
 
 <script>
-    // Function to show the hidden content when the "Explore Our Services" button is clicked
     function showExploreContent() {
-        var exploreContent = document.getElementById("exploreContent");
-        exploreContent.style.display = "block"; // Show the content
+        document.getElementById("exploreContent").style.display = "block";
     }
-
-    function sendBookingEmail() {
-        // Get values from the booking form
+    
+    function sendBookingAndOrderEmail() {
         var fullName = document.getElementById("fullName").value;
         var numGuests = document.getElementById("numGuests").value;
         var checkInDate = document.getElementById("checkInDate").value;
         var checkOutDate = document.getElementById("checkOutDate").value;
         var userEmail = document.getElementById("userEmail").value;
-
-        // Compose the email body
-        var emailBody = "New Client Booking:\n\n";
-        emailBody += "Full Name: " + fullName + "\n";
-        emailBody += "Number of Guests: " + numGuests + "\n";
-        emailBody += "Check-in Date: " + checkInDate + "\n";
-        emailBody += "Check-out Date: " + checkOutDate + "\n";
-        emailBody += "Client's Email: " + userEmail + "\n";
-
-        // Create the mailto link with the email subject and body
-        var mailtoLink = "mailto:sceneflicks@gmail.com?subject=NEW CLIENT BOOKING&body=" + encodeURIComponent(emailBody);
-
-        // Open the default mail client to send the email
-        window.location.href = mailtoLink;
-    }
-
-    function sendOrderEmail() {
-        // Get values from the restaurant menu form
+        var roomType = document.getElementById("roomType").value;
+        var boardPlan = document.getElementById("boardPlan").value;
         var menuItem = document.getElementById("menuItems").value;
         var menuQuantity = document.getElementById("menuQuantity").value;
-        var orderEmail = document.getElementById("orderEmail").value;
-
-        // Compose the email body
-        var emailBody = "New Restaurant Order:\n\n";
-        emailBody += "Menu Item: " + menuItem + "\n";
+        
+        var emailBody = "New Booking & Order Details:\n\n";
+        emailBody += "Full Name: " + fullName + "\n";
+        emailBody += "Guests: " + numGuests + "\n";
+        emailBody += "Check-in: " + checkInDate + "\n";
+        emailBody += "Check-out: " + checkOutDate + "\n";
+        emailBody += "Room Type: " + roomType + "\n";
+        emailBody += "Board Plan: " + boardPlan + "\n\n";
+        emailBody += "Meal Ordered: " + menuItem + "\n";
         emailBody += "Quantity: " + menuQuantity + "\n";
-        emailBody += "Customer's Email: " + orderEmail + "\n";
-
-        // Create the mailto link with the email subject and body
-        var mailtoLink = "mailto:sceneflicks@gmail.com?subject=NEW CLIENT ORDER&body=" + encodeURIComponent(emailBody);
-
-        // Open the default mail client to send the email
+        emailBody += "Customer Email: " + userEmail + "\n";
+        
+        var mailtoLink = "mailto:sceneflicks@gmail.com?subject=NEW BOOKING & ORDER&body=" + encodeURIComponent(emailBody);
         window.location.href = mailtoLink;
     }
 </script>
+
+
 
 					
 
