@@ -1848,8 +1848,8 @@ input[type="text"]:not(.form-control):focus, input[type="email"]:not(.form-contr
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #ff8800;
-  opacity: 0.55;
+  background-color: #000000;
+  opacity: 1;
   z-index: 1;
 }
 .view-article #sp-main-body .container .col-lg-8 .article-details .article-body-wrap {
@@ -2527,7 +2527,7 @@ input[type="text"]:not(.form-control):focus, input[type="email"]:not(.form-contr
   border-bottom-right-radius: 3px;
 }
 .sppb-addon-person .sppb-person-information > span.sppb-person-name {
-  color: #ff8800;
+  color: #ffffff;
   letter-spacing: 1.5px !important;
 }
 .sppb-addon-person .sppb-person-information > span.sppb-person-designation {
@@ -5073,7 +5073,7 @@ body {
 }
 
 a {
-    color: #8B0000; /* Dark red for link contrast */
+    color: #ffffff; /* Dark red for link contrast */
     text-decoration: none;
 }
 
@@ -5082,7 +5082,7 @@ a:hover {
 }
 
 button, .btn {
-    background-color: #8B0000; /* Dark red buttons */
+    background-color: #ffffff; /* Dark red buttons */
     color: #ffffff !important; /* White text for contrast */
     border-radius: 8px; /* Modern button design */
     padding: 10px 15px;
@@ -5109,7 +5109,7 @@ body {
 }
 
 a {
-    color: #8B0000; /* Dark red for a professional touch */
+    color: #ffffff; /* Dark red for a professional touch */
     text-decoration: none;
 }
 
@@ -5118,7 +5118,7 @@ a:hover {
 }
 
 button, .btn {
-    background-color: #8B0000; /* Dark red for buttons */
+    background-color: #ffffff; /* Dark red for buttons */
     color: #ffffff !important; /* White text for contrast */
     border-radius: 6px; /* Modern button shape */
     padding: 10px 14px;

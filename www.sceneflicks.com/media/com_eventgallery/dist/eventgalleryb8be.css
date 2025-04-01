@@ -3586,7 +3586,7 @@ body {
 }
 
 a {
-    color: #8B0000; /* Dark red for link contrast */
+    color: #ffffff; /* Dark red for link contrast */
     text-decoration: none;
 }
 
@@ -3595,7 +3595,7 @@ a:hover {
 }
 
 button, .btn {
-    background-color: #8B0000; /* Dark red buttons */
+    background-color: #ffffff; /* Dark red buttons */
     color: #ffffff !important; /* White text for contrast */
     border-radius: 8px; /* Modern button design */
     padding: 10px 15px;
@@ -3622,7 +3622,7 @@ body {
 }
 
 a {
-    color: #8B0000; /* Dark red for a professional touch */
+    color: #ffffff; /* Dark red for a professional touch */
     text-decoration: none;
 }
 
@@ -3631,7 +3631,7 @@ a:hover {
 }
 
 button, .btn {
-    background-color: #8B0000; /* Dark red for buttons */
+    background-color: #ffffff; /* Dark red for buttons */
     color: #ffffff !important; /* White text for contrast */
     border-radius: 6px; /* Modern button shape */
     padding: 10px 14px;
