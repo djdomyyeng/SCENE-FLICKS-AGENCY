@@ -190,91 +190,149 @@ template="shaper_wayne_corp";
     <!-- Booking Form Section -->
     <section class="booking-form">
         <h2>Book a Room</h2>
+        <p>Select a room type, and choose the board option (if any):</p>
+        
+        <label for="roomType">Room Type:</label>
+        <select id="roomType">
+            <option>Deluxe Room - KSh 15,000 per night</option>
+            <option>Cottage - KSh 12,000 per night</option>
+            <option>Standard Room - KSh 8,000 per night</option>
+            <option>Executive Suite - KSh 18,000 per night</option>
+        </select>
+        
+        <label for="boardOption">Board Option:</label>
+        <select id="boardOption">
+            <option>Bed Only</option>
+            <option>Half Board (Bed + Breakfast + Dinner) - KSh 4,000 extra</option>
+            <option>Full Board (Bed + All Meals) - KSh 8,000 extra</option>
+        </select>
+        
         <input type="text" id="fullName" placeholder="Full Name" />
         <input type="number" id="numGuests" placeholder="Number of Guests" />
         <input type="date" id="checkInDate" placeholder="Check-in Date" />
         <input type="date" id="checkOutDate" placeholder="Check-out Date" />
         <input type="email" id="userEmail" placeholder="Your Email" />
-        <select id="roomType">
-            <option>Deluxe - KES 10,000</option>
-            <option>Cottage - KES 15,000</option>
-            <option>Standard - KES 7,500</option>
-            <option>Executive - KES 20,000</option>
-        </select>
-        <select id="boardPlan">
-            <option>Full Board</option>
-            <option>Half Board</option>
-            <option>Bed Only</option>
-        </select>
+        
+        <button onclick="sendBookingEmail()">Send Booking Email</button>
     </section>
 
     <!-- Restaurant Menu Section -->
     <section class="restaurant-menu">
         <h2>Restaurant Menu</h2>
-        <select id="menuItems">
-            <optgroup label="Breakfast">
-                <option>Omelette - KES 400 (Eggs, cheese, onions, tomatoes)</option>
-                <option>Pancakes - KES 500 (Served with honey & fruits)</option>
-                <option>Full English Breakfast - KES 1,200 (Eggs, sausages, bacon, toast, beans)</option>
-            </optgroup>
-            <optgroup label="Lunch">
-                <option>Nyama Choma - KES 1,500 (Grilled beef/goat with Ugali & Kachumbari)</option>
-                <option>Chicken Biryani - KES 1,200 (Spiced rice with marinated chicken)</option>
-                <option>Vegetarian Pizza - KES 1,000 (Cheese, mushrooms, capsicum, tomatoes)</option>
-            </optgroup>
-            <optgroup label="Dinner">
-                <option>Grilled Salmon - KES 2,500 (Served with mashed potatoes & vegetables)</option>
-                <option>Beef Steak - KES 2,000 (Served with creamy pepper sauce)</option>
-                <option>Pilau - KES 1,000 (Spiced rice with beef and onions)</option>
-            </optgroup>
-            <optgroup label="Buffets & Platters">
-                <option>Seafood Platter - KES 3,000 (Prawns, calamari, fish, served with rice)</option>
-                <option>Mixed Grill - KES 2,500 (Lamb, beef, chicken, served with mashed potatoes)</option>
-            </optgroup>
-            <optgroup label="International Cuisine">
-                <option>Pasta Carbonara - KES 1,500 (Creamy sauce with bacon & parmesan cheese)</option>
-                <option>Cheeseburger - KES 800 (Beef patty, cheese, lettuce, tomato, pickles)</option>
-            </optgroup>
+        <p>Select the meals you would like to order (only for Bed Only clients):</p>
+        
+        <label for="mealType">Meal Type:</label>
+        <select id="mealType">
+            <option>Breakfast</option>
+            <option>Lunch</option>
+            <option>Dinner</option>
         </select>
-        <input type="number" id="menuQuantity" placeholder="Quantity" />
+        
+        <label for="mealChoice">Meal Choice:</label>
+        <select id="mealChoice">
+            <!-- Meals categorized into breakfast, lunch, and dinner -->
+            <option value="omelette">Omelette (Breakfast) - KSh 500</option>
+            <option value="eggs_bacon">Eggs & Bacon (Breakfast) - KSh 600</option>
+            <option value="pancakes">Pancakes (Breakfast) - KSh 700</option>
+            <option value="grilled_chicken">Grilled Chicken (Lunch/Dinner) - KSh 1,200</option>
+            <option value="vegetarian_pasta">Vegetarian Pasta (Lunch/Dinner) - KSh 1,000</option>
+            <option value="beef_steak">Beef Steak (Lunch/Dinner) - KSh 1,500</option>
+            <option value="seafood_platter">Seafood Platter (Lunch/Dinner) - KSh 2,000</option>
+            <option value="nyama_choma">Nyama Choma (Lunch/Dinner) - KSh 1,800</option>
+            <option value="pizza">Pizza (Lunch/Dinner) - KSh 900</option>
+            <option value="spaghetti_bolognese">Spaghetti Bolognese (Lunch/Dinner) - KSh 850</option>
+            <option value="buffet">Buffet (All Meals) - KSh 2,500 per person</option>
+            <option value="no_extra_meal">No Extra Meal (Free)</option> <!-- Added No Extra Meal option -->
+        </select>
+        
+        <input type="number" id="mealQuantity" placeholder="Quantity" />
+        <input type="email" id="orderEmail" placeholder="Your Email" />
+        
+        <button onclick="sendOrderEmail()">Send Meal Order</button>
     </section>
 
-    <button onclick="sendBookingAndOrderEmail()">Send Email</button>
+    <!-- Payment Section -->
+    <section class="payment-options">
+        <h2>Payment Options</h2>
+        <p>Choose your payment method:</p>
+        <select id="paymentMethod">
+            <option value="paypal">Pay via PayPal (sceneflicks@gmail.com)</option>
+            <option value="pay_at_hotel">Pay at the Hotel</option>
+        </select>
+    </section>
+
+    <!-- One-click email for clients who want to quickly order -->
+    <section class="quick-email">
+        <h2>Quick Email</h2>
+        <p>If you only wish to book a room or order a meal quickly, click the button below to send us an email:</p>
+        <button onclick="sendQuickEmail()">Send Quick Email</button>
+    </section>
 </div>
 
 <script>
+    // Function to show the hidden content when the "Explore Our Services" button is clicked
     function showExploreContent() {
-        document.getElementById("exploreContent").style.display = "block";
+        var exploreContent = document.getElementById("exploreContent");
+        exploreContent.style.display = "block"; // Show the content
     }
-    
-    function sendBookingAndOrderEmail() {
+
+    function sendBookingEmail() {
+        // Get values from the booking form
         var fullName = document.getElementById("fullName").value;
         var numGuests = document.getElementById("numGuests").value;
         var checkInDate = document.getElementById("checkInDate").value;
         var checkOutDate = document.getElementById("checkOutDate").value;
         var userEmail = document.getElementById("userEmail").value;
         var roomType = document.getElementById("roomType").value;
-        var boardPlan = document.getElementById("boardPlan").value;
-        var menuItem = document.getElementById("menuItems").value;
-        var menuQuantity = document.getElementById("menuQuantity").value;
+        var boardOption = document.getElementById("boardOption").value;
         
-        var emailBody = "New Booking & Order Details:\n\n";
+        // Compose the email body
+        var emailBody = "New Client Booking:\n\n";
         emailBody += "Full Name: " + fullName + "\n";
-        emailBody += "Guests: " + numGuests + "\n";
-        emailBody += "Check-in: " + checkInDate + "\n";
-        emailBody += "Check-out: " + checkOutDate + "\n";
+        emailBody += "Number of Guests: " + numGuests + "\n";
+        emailBody += "Check-in Date: " + checkInDate + "\n";
+        emailBody += "Check-out Date: " + checkOutDate + "\n";
         emailBody += "Room Type: " + roomType + "\n";
-        emailBody += "Board Plan: " + boardPlan + "\n\n";
-        emailBody += "Meal Ordered: " + menuItem + "\n";
-        emailBody += "Quantity: " + menuQuantity + "\n";
-        emailBody += "Customer Email: " + userEmail + "\n";
+        emailBody += "Board Option: " + boardOption + "\n";
+        emailBody += "Client's Email: " + userEmail + "\n";
+
+        // Create the mailto link with the email subject and body
+        var mailtoLink = "mailto:sceneflicks@gmail.com?subject=NEW CLIENT BOOKING&body=" + encodeURIComponent(emailBody);
+
+        // Open the default mail client to send the email
+        window.location.href = mailtoLink;
+    }
+
+    function sendOrderEmail() {
+        // Get values from the restaurant menu form
+        var mealChoice = document.getElementById("mealChoice").value;
+        var mealQuantity = document.getElementById("mealQuantity").value;
+        var orderEmail = document.getElementById("orderEmail").value;
+        var mealType = document.getElementById("mealType").value;
         
-        var mailtoLink = "mailto:sceneflicks@gmail.com?subject=NEW BOOKING & ORDER&body=" + encodeURIComponent(emailBody);
+        // Compose the email body
+        var emailBody = "New Restaurant Order:\n\n";
+        emailBody += "Meal Type: " + mealType + "\n";
+        emailBody += "Meal Choice: " + mealChoice + "\n";
+        emailBody += "Quantity: " + mealQuantity + "\n";
+        emailBody += "Customer's Email: " + orderEmail + "\n";
+
+        // Create the mailto link with the email subject and body
+        var mailtoLink = "mailto:sceneflicks@gmail.com?subject=NEW CLIENT ORDER&body=" + encodeURIComponent(emailBody);
+
+        // Open the default mail client to send the email
+        window.location.href = mailtoLink;
+    }
+
+    function sendQuickEmail() {
+        // This function will send a quick email for either booking or meal ordering
+        var emailBody = "I would like to book a room or order a meal. Please contact me for further details.";
+        var mailtoLink = "mailto:sceneflicks@gmail.com?subject=Quick Booking/Meal Request&body=" + encodeURIComponent(emailBody);
+        
+        // Open the default mail client to send the quick email
         window.location.href = mailtoLink;
     }
 </script>
-
-
 
 					
 
