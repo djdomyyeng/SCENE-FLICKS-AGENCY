@@ -1,13 +1,158 @@
-@media (max-width: 767px){.hidden-xs{display:none !important}}@media (min-width: 992px) and (max-width: 1199px){.hidden-md{display:none !important}}@media (min-width: 1200px){.hidden-lg{display:none !important}}.jfab_wrapper{z-index:999999;width:100%;height:240px;position:fixed;right:0px;bottom:0px;pointer-events:none}.jfab_btns_wrapper{right:0;bottom:0;position:absolute;text-align:right;display:none;-webkit-transition:opacity 0.3s ease-in;-moz-transition:opacity 0.3s ease-in;-ms-transition:opacity 0.3s ease-in;-o-transition:opacity 0.3s ease-in;transition:opacity 0.3s ease-in;pointer-events:all}.jfab_btns_wrapper .show{display:block;opacity:1}.jfab_btns_wrapper button{width:50px;height:50px;border-radius:100%;background:#e74c3c;margin-bottom:12px;margin-right:20px;padding:0;border:none;outline:none;color: #ff8800;font-size:19px;box-shadow:0 4px 17px 0 rgba(0,0,0,0.14),0 1px 32px 0 rgba(0,0,0,0.12),0 2px 9px -1px rgba(0,0,0,0.2);transition:.6s;pointer-events:all;cursor:pointer;-moz-transform:scale(0.1);-webkit-transform:scale(0.1);transform:scale(0.1);font-family:'Material Icons'}.jfab_btns_wrapper button:hover{box-shadow:0 4px 17px 0 rgba(0,0,0,0.14),0 1px 32px 0 rgba(0,0,0,0.12),0 2px 9px -1px rgba(0,0,0,0.2)}.jfab_btns_wrapper .zoomin{-moz-transform:scale(1);-webkit-transform:scale(1);transform:scale(1)}.jfab_btns_wrapper .child_item_icon_custom{width:26px !important;height:26px !important;margin:0 auto !important;vertical-align:baseline !important}.jfab_btns_wrapper div:last-child{margin-bottom:75px}button.jfab_main_btn{background-color: #ff8800;width:60px;height:60px;border-radius:100%;background:#e74c3c;right:16px;bottom:16px;position:absolute;margin-right:0;margin-bottom:0;padding:0;border:none;outline:none;color: #ff8800;font-size:24px;box-shadow:0 4px 17px 0 rgba(0,0,0,0.14),0 1px 32px 0 rgba(0,0,0,0.12),0 2px 9px -1px rgba(0,0,0,0.2);transition:.3s;-webkit-tap-highlight-color:transparent;cursor:pointer;pointer-events:all}button.jfab_main_btn .main_item_icon_custom{width:40px !important;height:40px !important;margin:10px 0 0 !important;vertical-align:baseline !important}button.jfab_main_btn:hover .jfab_main_btn{box-shadow:0 4px 17px 0 rgba(0,0,0,0.14),0 1px 32px 0 rgba(0,0,0,0.12),0 2px 9px -1px rgba(0,0,0,0.2)}button.jfab_main_btn span{transition:.5s;font-family:'Material Icons';font-size:40px;line-height:60px}.jfab_main_btn.rotate{transform:rotate(45deg);-ms-transform:rotate(45deg);-webkit-transform:rotate(45deg)}.jfab_tooltip{font-family:sans-serif;padding:3px 8px;display:inline-block;border-radius:4px;font-size:14px;transition:.7s;transform:rotate(410deg);-ms-transform:rotate(410deg);-webkit-transform:rotate(410deg);margin:10px 10px 0 0}.tooltip_dark .jfab_tooltip{color: #ff8800;background:rgba(0,0,0,0.6);box-shadow:0 4px 37px 0 rgba(0,0,0,0.14),0 1px 62px 0 rgba(0,0,0,0.12),0 2px 9px -10px rgba(0,0,0,0.2)}.tooltip_light .jfab_tooltip{color: #ff8800;background:rgba(255,255,255,0.6);box-shadow:0 4px 37px 0 rgba(0,0,0,0.14),0 1px 62px 0 rgba(0,0,0,0.12),0 2px 9px -10px rgba(0,0,0,0.2)}.jfab_tooltip.animate{transform:rotate(360deg);-ms-transform:rotate(360deg);-webkit-transform:rotate(360deg);margin:10px 10px 0 0}
+/* Media Queries for Responsive Design */
+@media (max-width: 767px){
+    .hidden-xs{display:none !important}
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    .hidden-md{display:none !important}
+}
+@media (min-width: 1200px){
+    .hidden-lg{display:none !important}
+}
 
+/* Floating Action Button (FAB) Styles */
+.jfab_wrapper {
+    z-index:999999;
+    width:100%;
+    height:240px;
+    position:fixed;
+    right:0px;
+    bottom:0px;
+    pointer-events:none;
+}
+.jfab_btns_wrapper {
+    right:0;
+    bottom:0;
+    position:absolute;
+    text-align:right;
+    display:none;
+    -webkit-transition:opacity 0.3s ease-in;
+    -moz-transition:opacity 0.3s ease-in;
+    -ms-transition:opacity 0.3s ease-in;
+    -o-transition:opacity 0.3s ease-in;
+    transition:opacity 0.3s ease-in;
+    pointer-events:all;
+}
+.jfab_btns_wrapper .show {
+    display:block;
+    opacity:1;
+}
+.jfab_btns_wrapper button {
+    width:50px;
+    height:50px;
+    border-radius:100%;
+    background:#e74c3c;
+    margin-bottom:12px;
+    margin-right:20px;
+    padding:0;
+    border:none;
+    outline:none;
+    color: #ff8800;
+    font-size:19px;
+    box-shadow:0 4px 17px 0 rgba(0,0,0,0.14),0 1px 32px 0 rgba(0,0,0,0.12),0 2px 9px -1px rgba(0,0,0,0.2);
+    transition:.6s;
+    pointer-events:all;
+    cursor:pointer;
+    -moz-transform:scale(0.1);
+    -webkit-transform:scale(0.1);
+    transform:scale(0.1);
+    font-family:'Material Icons';
+}
+.jfab_btns_wrapper button:hover {
+    box-shadow:0 4px 17px 0 rgba(0,0,0,0.14),0 1px 32px 0 rgba(0,0,0,0.12),0 2px 9px -1px rgba(0,0,0,0.2);
+}
+.jfab_btns_wrapper .zoomin {
+    -moz-transform:scale(1);
+    -webkit-transform:scale(1);
+    transform:scale(1);
+}
+.jfab_btns_wrapper .child_item_icon_custom {
+    width:26px !important;
+    height:26px !important;
+    margin:0 auto !important;
+    vertical-align:baseline !important;
+}
+.jfab_btns_wrapper div:last-child {
+    margin-bottom:75px;
+}
+button.jfab_main_btn {
+    background-color: #ff8800;
+    width:60px;
+    height:60px;
+    border-radius:100%;
+    background:#e74c3c;
+    right:16px;
+    bottom:16px;
+    position:absolute;
+    margin-right:0;
+    margin-bottom:0;
+    padding:0;
+    border:none;
+    outline:none;
+    color: #ff8800;
+    font-size:24px;
+    box-shadow:0 4px 17px 0 rgba(0,0,0,0.14),0 1px 32px 0 rgba(0,0,0,0.12),0 2px 9px -1px rgba(0,0,0,0.2);
+    transition:.3s;
+    -webkit-tap-highlight-color:transparent;
+    cursor:pointer;
+    pointer-events:all;
+}
+button.jfab_main_btn .main_item_icon_custom {
+    width:40px !important;
+    height:40px !important;
+    margin:10px 0 0 !important;
+    vertical-align:baseline !important;
+}
+button.jfab_main_btn:hover .jfab_main_btn {
+    box-shadow:0 4px 17px 0 rgba(0,0,0,0.14),0 1px 32px 0 rgba(0,0,0,0.12),0 2px 9px -1px rgba(0,0,0,0.2);
+}
+button.jfab_main_btn span {
+    transition:.5s;
+    font-family:'Material Icons';
+    font-size:40px;
+    line-height:60px;
+}
+.jfab_main_btn.rotate {
+    transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+}
+.jfab_tooltip {
+    font-family:sans-serif;
+    padding:3px 8px;
+    display:inline-block;
+    border-radius:4px;
+    font-size:14px;
+    transition:.7s;
+    transform:rotate(410deg);
+    -ms-transform:rotate(410deg);
+    -webkit-transform:rotate(410deg);
+    margin:10px 10px 0 0;
+}
+.tooltip_dark .jfab_tooltip {
+    color: #ff8800;
+    background:rgba(0,0,0,0.6);
+    box-shadow:0 4px 37px 0 rgba(0,0,0,0.14),0 1px 62px 0 rgba(0,0,0,0.12),0 2px 9px -10px rgba(0,0,0,0.2);
+}
+.tooltip_light .jfab_tooltip {
+    color: #ff8800;
+    background:rgba(255,255,255,0.6);
+    box-shadow:0 4px 37px 0 rgba(0,0,0,0.14),0 1px 62px 0 rgba(0,0,0,0.12),0 2px 9px -10px rgba(0,0,0,0.2);
+}
+.jfab_tooltip.animate {
+    transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
+    margin:10px 10px 0 0;
+}
 
+/* Image Hover Effects */
 img {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 img:hover {
-    transform: scale(1.05); /* Slight zoom effect */
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Pop-out shadow */
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .gallery {
@@ -24,112 +169,89 @@ img:hover {
     }
 }
 
-
+/* General Styling */
 body {
-    background-color: #ffffff !important; /* Set background to white */
-    font-family: 'Poppins', sans-serif; /* Modern font */
-}
-
-.navbar, .footer {
-    background: linear-gradient(90deg, #8B0000, #ff8800); /* Futuristic navbar & footer */
-}
-
-button, .btn {
-    transition: all 0.3s ease;
-}
-
-button:hover, .btn:hover {
-    transform: scale(1.05); /* Interactive hover effect */
-}
-
-@media (max-width: 768px) {
-    .navbar {
-        padding: 10px; /* Better mobile responsiveness */
-    }
-}
-
-
-body {
-    background-color: #ffffff !important; /* Maintain white background */
-    color: #000000 !important; /* Ensure black text for readability */
-    font-family: 'Poppins', sans-serif; /* Modern, professional font */
-}
-
-.navbar, .footer {
-    background: #ffffff !important; /* Clean white navbar & footer */
+    background-color: #ffffff !important;
+    font-family: 'Poppins', sans-serif;
     color: #000000 !important;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.navbar, .footer {
+    background: #ffffff !important;
+    color: #000000 !important;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 a {
-    color: #ffffff; /* Dark red for link contrast */
+    color: #ffffff;
     text-decoration: none;
 }
 
 a:hover {
-    color: #ff8800; /* Gold hover effect for elegance */
+    color: #ff8800;
 }
 
 button, .btn {
-    background-color: #ffffff; /* Dark red buttons */
-    color: #ffffff !important; /* White text for contrast */
-    border-radius: 8px; /* Modern button design */
+    background-color: #ff8800;
+    color: #ffffff !important;
+    border-radius: 8px;
     padding: 10px 15px;
     transition: all 0.3s ease;
 }
 
 button:hover, .btn:hover {
-    background-color: #ff8800; /* Gold hover effect */
+    background-color: #ff8800;
     color: #000000 !important;
     transform: scale(1.05);
 }
 
-
+/* Specific Form and Button Styling */
 body {
-    background-color: #ffffff !important; /* Pure white background */
-    color: #000000 !important; /* Black text for clear readability */
-    font-family: 'Poppins', sans-serif; /* Sleek modern font */
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    font-family: 'Poppins', sans-serif;
 }
 
 .navbar, .footer {
-    background: #ffffff !important; /* No yellow or gold, just white */
+    background: #ffffff !important;
     color: #000000 !important;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Minimalist shadow */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 a {
-    color: #ffffff; /* Dark red for a professional touch */
+    color: #ffffff;
     text-decoration: none;
 }
 
 a:hover {
-    color: #333333; /* Subtle dark gray hover effect */
+    color: #333333;
 }
 
 button, .btn {
-    background-color: #ffffff; /* Dark red for buttons */
-    color: #ffffff !important; /* White text for contrast */
-    border-radius: 6px; /* Modern button shape */
+    background-color: #ff8800;
+    color: #ffffff !important;
+    border-radius: 6px;
     padding: 10px 14px;
     transition: all 0.3s ease-in-out;
 }
 
 button:hover, .btn:hover {
-    background-color: #5A0000; /* Darker red on hover */
+    background-color: #5A0000;
     transform: scale(1.03);
 }
 
+/* Logo Styling */
 img {
     max-width: 100%;
     height: auto;
 }
 
 .logo {
-    max-width: 150px !important; /* Fix logo size to be reasonable on mobile */
+    max-width: 150px !important;
 }
 
 @media (max-width: 768px) {
     .logo {
-        max-width: 120px !important; /* Smaller logo for phones */
+        max-width: 120px !important;
     }
 }

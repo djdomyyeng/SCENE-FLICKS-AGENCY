@@ -733,7 +733,7 @@ input[type="text"]:not(.form-control), input[type="email"]:not(.form-control), i
 }
 input[type="text"]:not(.form-control):focus, input[type="email"]:not(.form-control):focus, input[type="url"]:not(.form-control):focus, input[type="date"]:not(.form-control):focus, input[type="password"]:not(.form-control):focus, input[type="search"]:not(.form-control):focus, input[type="tel"]:not(.form-control):focus, input[type="number"]:not(.form-control):focus, select:not(.form-control):focus {
   color: #ff8800;
-  background-color: #ff8800;
+  background-color: #ffffff;
   border-color: #ff8800;
   outline: 0;
 }
@@ -2074,56 +2074,68 @@ input[type="text"]:not(.form-control):focus, input[type="email"]:not(.form-contr
 /* **************************************************** */
 /* **************     START:: Button    *************** */
 /* **************************************************** */
-.sppb-btn {
-  font-size: 14px;
-  padding: 17px 35px;
-  border: none;
-  border-radius: 3px;
-  position: relative;
-  z-index: 3;
-  overflow: hidden;
+.sppb-btn { 
+  
+    background-color: #ff8800;
+    color: #ffffff !important;
+    border-radius: 6px;
+    padding: 10px 14px;
+    transition: all 0.3s ease-in-out;
 }
+
 .sppb-btn.sppb-btn-xlg {
   font-size: 18px;
-  padding: 20px 60px;
+  padding: 6px 14px; /* Tightened padding */
 }
+
 .sppb-btn.sppb-btn-lg {
   font-size: 16px;
-  padding: 12px 55px;
+  padding: 5px 12px;
 }
+
 .sppb-btn.sppb-btn-sm {
-  padding: 10px 35px;
+  padding: 3px 8px;
+  font-size: 12px;
 }
+
 .sppb-btn.sppb-btn-xs {
-  padding: 6px 30px;
+  padding: 2px 6px;
   font-size: 11px;
 }
+
 .sppb-btn.sppb-btn-default {
   color: #ffffff;
   background-color: #ff8800;
 }
+
 .sppb-btn.sppb-btn-default:hover {
-  background-color: rgba(166, 124, 0, .8);
+  background-color: rgba(166, 124, 0, 0.8);
 }
+
 .sppb-btn.sppb-btn-primary {
   color: #ff8800;
   border: 1px solid #ff8800;
 }
+
 .sppb-btn.sppb-btn-primary:hover {
   color: #ff8800;
   border-color: #ff8800;
   background-color: #ff8800;
 }
+
 .sppb-btn.sppb-btn-link {
   font-weight: 500;
-  letter-spacing: 1.4px;
+  letter-spacing: 1px; /* Adjusted spacing */
   color: #ff8800;
   background-color: transparent;
   padding: 0;
 }
-.sppb-btn.sppb-btn-link:focus, .sppb-btn.sppb-btn-link:hover {
+
+.sppb-btn.sppb-btn-link:focus, 
+.sppb-btn.sppb-btn-link:hover {
   color: #ff8800;
 }
+
 /* **************************************************** */
 /* **************     END:: Button    ***************** */
 /* **************************************************** */
