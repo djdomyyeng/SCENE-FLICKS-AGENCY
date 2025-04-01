@@ -178,165 +178,201 @@ template="shaper_wayne_corp";
 
 	
 	<div class="page-content" x-data="easystoreProductDetails">
-				<section id="section-id-1542709301800" class="sppb-section hero-section sppb-section-content-center" ><div class="sppb-row-overlay"></div><div class="sppb-row-container"><div class="sppb-row sppb-align-center"><div class="sppb-col-md-12  " id="column-wrap-id-1542709301799"><div id="column-id-1542709301799" class="sppb-column  " ><div class="sppb-column-addons"><div id="sppb-addon-wrapper-1542709861050" class="sppb-addon-wrapper  addon-root-heading"><div id="sppb-addon-1542709861050" class="clearfix  "     ><div class="sppb-addon sppb-addon-header sppb-text-left"><h1 class="sppb-addon-title">THIS WEBSITE IS DESIGNED BY DJ DOMY YENG</h1></div></div></div><div id="sppb-addon-wrapper-1542867181995" class="sppb-addon-wrapper  addon-root-animated-heading"><div id="sppb-addon-1542867181995" class="clearfix  "     ><div class="sppb-addon sppb-addon-animated-heading sppb-text-left"><h2 class="sppb-addon-title animated-heading-text text-animation-flip"><span class="animated-text-words-wrapper"><span class="animated-text is-visible">a home away from home</span><span class="animated-text ">range of amazing cuisine options</span><span class="animated-text ">cozy accommodation options</span><span class="animated-text ">modern conferencing experience</span><span class="animated-text ">relaxing ambiance in the woods</span></span></h2></div></div></div><div id="sppb-addon-wrapper-1542709917009" class="sppb-addon-wrapper  addon-root-button"><div id="sppb-addon-1542709917009" class="clearfix  "     ><div class="sppb-button-wrapper"><a href="https://sceneflicks.com/book/"   id="btn-1542709917009"  class="sppb-btn  sppb-btn-default sppb-btn-rounded">
+				<section id="section-id-1542709301800" class="sppb-section hero-section sppb-section-content-center" ><div class="sppb-row-overlay"></div><div class="sppb-row-container"><div class="sppb-row sppb-align-center"><div class="sppb-col-md-12  " id="column-wrap-id-1542709301799"><div id="column-id-1542709301799" class="sppb-column  " ><div class="sppb-column-addons"><div id="sppb-addon-wrapper-1542709861050" class="sppb-addon-wrapper  addon-root-heading"><div id="sppb-addon-1542709861050" class="clearfix  "     ><div class="sppb-addon sppb-addon-header sppb-text-left"><h1 class="sppb-addon-title">THIS WEBSITE IS DESIGNED BY DJ DOMY YENG</h1></div></div></div><div id="sppb-addon-wrapper-1542867181995" class="sppb-addon-wrapper  addon-root-animated-heading"><div id="sppb-addon-1542867181995" class="clearfix  "     ><div class="sppb-addon sppb-addon-animated-heading sppb-text-left"><h2 class="sppb-addon-title animated-heading-text text-animation-flip"><span class="animated-text-words-wrapper"><span class="animated-text is-visible">a home away from home</span><span class="animated-text ">range of amazing peppercornresort options</span><span class="animated-text ">cozy accommodation options</span><span class="animated-text ">modern conferencing experience</span><span class="animated-text ">relaxing ambiance in the woods</span></span></h2></div></div></div><div id="sppb-addon-wrapper-1542709917009" class="sppb-addon-wrapper  addon-root-button"><div id="sppb-addon-1542709917009" class="clearfix  "     ><div class="sppb-button-wrapper"><a href="https://sceneflicks.com/book/"   id="btn-1542709917009"  class="sppb-btn  sppb-btn-default sppb-btn-rounded">
 					Book Your Stay <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></div>
 
-
-<!-- Button to explore the services -->
-<button id="exploreBtn" onclick="showExploreContent()">Explore Our Services</button>
-
-<!-- Hidden content sections (Booking Form and Restaurant Menu) -->
-<div id="exploreContent" style="display: none;">
-    <!-- Booking Form Section -->
-    <section class="booking-form">
-        <h2>Book a Room</h2>
-        <p>Select a room type, and choose the board option (if any):</p>
-        
-        <label for="roomType">Room Type:</label>
-        <select id="roomType">
-            <option>Deluxe Room - KSh 15,000 per night</option>
-            <option>Cottage - KSh 12,000 per night</option>
-            <option>Standard Room - KSh 8,000 per night</option>
-            <option>Executive Suite - KSh 18,000 per night</option>
-        </select>
-        
-        <label for="boardOption">Board Option:</label>
-        <select id="boardOption">
-            <option>Bed Only</option>
-            <option>Half Board (Bed + Breakfast + Dinner) - KSh 4,000 extra</option>
-            <option>Full Board (Bed + All Meals) - KSh 8,000 extra</option>
-        </select>
-        
-        <input type="text" id="fullName" placeholder="Full Name" />
-        <input type="number" id="numGuests" placeholder="Number of Guests" />
-        <input type="date" id="checkInDate" placeholder="Check-in Date" />
-        <input type="date" id="checkOutDate" placeholder="Check-out Date" />
-        <input type="email" id="userEmail" placeholder="Your Email" />
-        
-        <button onclick="sendBookingEmail()">Send Booking Email</button>
-    </section>
-
-    <!-- Restaurant Menu Section -->
-    <section class="restaurant-menu">
-        <h2>Restaurant Menu</h2>
-        <p>Select the meals you would like to order (only for Bed Only clients):</p>
-        
-        <label for="mealType">Meal Type:</label>
-        <select id="mealType">
-            <option>Breakfast</option>
-            <option>Lunch</option>
-            <option>Dinner</option>
-        </select>
-        
-        <label for="mealChoice">Meal Choice:</label>
-        <select id="mealChoice">
-            <!-- Meals categorized into breakfast, lunch, and dinner -->
-            <option value="omelette">Omelette (Breakfast) - KSh 500</option>
-            <option value="eggs_bacon">Eggs & Bacon (Breakfast) - KSh 600</option>
-            <option value="pancakes">Pancakes (Breakfast) - KSh 700</option>
-            <option value="grilled_chicken">Grilled Chicken (Lunch/Dinner) - KSh 1,200</option>
-            <option value="vegetarian_pasta">Vegetarian Pasta (Lunch/Dinner) - KSh 1,000</option>
-            <option value="beef_steak">Beef Steak (Lunch/Dinner) - KSh 1,500</option>
-            <option value="seafood_platter">Seafood Platter (Lunch/Dinner) - KSh 2,000</option>
-            <option value="nyama_choma">Nyama Choma (Lunch/Dinner) - KSh 1,800</option>
-            <option value="pizza">Pizza (Lunch/Dinner) - KSh 900</option>
-            <option value="spaghetti_bolognese">Spaghetti Bolognese (Lunch/Dinner) - KSh 850</option>
-            <option value="buffet">Buffet (All Meals) - KSh 2,500 per person</option>
-            <option value="no_extra_meal">No Extra Meal (Free)</option> <!-- Added No Extra Meal option -->
-        </select>
-        
-        <input type="number" id="mealQuantity" placeholder="Quantity" />
-        <input type="email" id="orderEmail" placeholder="Your Email" />
-        
-        <button onclick="sendOrderEmail()">Send Meal Order</button>
-    </section>
-
-    <!-- Payment Section -->
-    <section class="payment-options">
-        <h2>Payment Options</h2>
-        <p>Choose your payment method:</p>
-        <select id="paymentMethod">
-            <option value="paypal">Pay via PayPal (sceneflicks@gmail.com)</option>
-            <option value="pay_at_hotel">Pay at the Hotel</option>
-        </select>
-    </section>
-
-    <!-- One-click email for clients who want to quickly order -->
-    <section class="quick-email">
-        <h2>Quick Email</h2>
-        <p>If you only wish to book a room or order a meal quickly, click the button below to send us an email:</p>
-        <button onclick="sendQuickEmail()">Send Quick Email</button>
-    </section>
-</div>
-
-<script>
-    // Function to show the hidden content when the "Explore Our Services" button is clicked
-    function showExploreContent() {
-        var exploreContent = document.getElementById("exploreContent");
-        exploreContent.style.display = "block"; // Show the content
-    }
-
-    function sendBookingEmail() {
-        // Get values from the booking form
-        var fullName = document.getElementById("fullName").value;
-        var numGuests = document.getElementById("numGuests").value;
-        var checkInDate = document.getElementById("checkInDate").value;
-        var checkOutDate = document.getElementById("checkOutDate").value;
-        var userEmail = document.getElementById("userEmail").value;
-        var roomType = document.getElementById("roomType").value;
-        var boardOption = document.getElementById("boardOption").value;
-        
-        // Compose the email body
-        var emailBody = "New Client Booking:\n\n";
-        emailBody += "Full Name: " + fullName + "\n";
-        emailBody += "Number of Guests: " + numGuests + "\n";
-        emailBody += "Check-in Date: " + checkInDate + "\n";
-        emailBody += "Check-out Date: " + checkOutDate + "\n";
-        emailBody += "Room Type: " + roomType + "\n";
-        emailBody += "Board Option: " + boardOption + "\n";
-        emailBody += "Client's Email: " + userEmail + "\n";
-
-        // Create the mailto link with the email subject and body
-        var mailtoLink = "mailto:sceneflicks@gmail.com?subject=NEW CLIENT BOOKING&body=" + encodeURIComponent(emailBody);
-
-        // Open the default mail client to send the email
-        window.location.href = mailtoLink;
-    }
-
-    function sendOrderEmail() {
-        // Get values from the restaurant menu form
-        var mealChoice = document.getElementById("mealChoice").value;
-        var mealQuantity = document.getElementById("mealQuantity").value;
-        var orderEmail = document.getElementById("orderEmail").value;
-        var mealType = document.getElementById("mealType").value;
-        
-        // Compose the email body
-        var emailBody = "New Restaurant Order:\n\n";
-        emailBody += "Meal Type: " + mealType + "\n";
-        emailBody += "Meal Choice: " + mealChoice + "\n";
-        emailBody += "Quantity: " + mealQuantity + "\n";
-        emailBody += "Customer's Email: " + orderEmail + "\n";
-
-        // Create the mailto link with the email subject and body
-        var mailtoLink = "mailto:sceneflicks@gmail.com?subject=NEW CLIENT ORDER&body=" + encodeURIComponent(emailBody);
-
-        // Open the default mail client to send the email
-        window.location.href = mailtoLink;
-    }
-
-    function sendQuickEmail() {
-        // This function will send a quick email for either booking or meal ordering
-        var emailBody = "I would like to book a room or order a meal. Please contact me for further details.";
-        var mailtoLink = "mailto:sceneflicks@gmail.com?subject=Quick Booking/Meal Request&body=" + encodeURIComponent(emailBody);
-        
-        // Open the default mail client to send the quick email
-        window.location.href = mailtoLink;
-    }
-</script>
-
+                    
+                    <section id="hotelList">
+                        <h2>Choose a Hotel</h2>
+                    
+                        <!-- Hotel 1: Peppercorn Resort -->
+                        <div class="hotel-item">
+                            <button onclick="toggleHotelDetails('peppercorn')" class="hotel-button">
+                                <img src="images/61.jpg" alt="Peppercorn Resort" class="hotel-image">
+                            </button>
+                            <div id="peppercornDetails" class="hotel-details" style="display: none;">
+                                <p><strong>Room Types:</strong></p>
+                                <ul>
+                                    <li>Deluxe Room - KSh 16,000 per night</li>
+                                    <li>Cottage - KSh 14,000 per night</li>
+                                    <li>Standard Room - KSh 9,500 per night</li>
+                                </ul>
+                                <section class="booking-form">
+                                    <h2>Book a Room</h2>
+                                    <label for="roomType">Room Type:</label>
+                                    <select id="roomType">
+                                        <option>Deluxe Room - KSh 16,000 per night</option>
+                                        <option>Cottage - KSh 14,000 per night</option>
+                                        <option>Standard Room - KSh 9,500 per night</option>
+                                    </select>
+                                    <label for="boardOption">Board Option:</label>
+                                    <select id="boardOption">
+                                        <option>Bed Only</option>
+                                        <option>Half Board (Bed + Breakfast + Dinner) - KSh 4,000 extra</option>
+                                        <option>Full Board (Bed + All Meals) - KSh 8,000 extra</option>
+                                    </select>
+                                    <div class="sp-input-wrap"><input type="text" id="fullName" placeholder="Full Name"></div>
+                                    <input type="number" id="numGuests" placeholder="Number of Guests">
+                                    <input type="date" id="checkInDate" placeholder="Check-in Date">
+                                    <input type="date" id="checkOutDate" placeholder="Check-out Date">
+                                    <div class="sp-input-wrap"><input type="email" id="userEmail" placeholder="Your Email"></div>
+                                    <button onclick="sendBookingEmail('Peppercorn Resort')">Send Booking Email</button>
+                                </section>
+                                <section class="restaurant-menu">
+                                    <h2>Restaurant Menu</h2>
+                                    <label for="mealType">Meal Type:</label>
+                                    <select id="mealType">
+                                        <option>Breakfast</option>
+                                        <option>Lunch</option>
+                                        <option>Dinner</option>
+                                    </select>
+                                    <label for="mealChoice">Meal Choice:</label>
+                                    <select id="mealChoice">
+                                        <option value="omelette">Omelette (Breakfast) - KSh 500</option>
+                                        <option value="eggs_bacon">Eggs & Bacon (Breakfast) - KSh 600</option>
+                                        <option value="pancakes">Pancakes (Breakfast) - KSh 700</option>
+                                        <option value="grilled_chicken">Grilled Chicken (Lunch/Dinner) - KSh 1,200</option>
+                                        <option value="vegetarian_pasta">Vegetarian Pasta (Lunch/Dinner) - KSh 1,000</option>
+                                        <option value="beef_steak">Beef Steak (Lunch/Dinner) - KSh 1,500</option>
+                                        <option value="seafood_platter">Seafood Platter (Lunch/Dinner) - KSh 2,000</option>
+                                        <option value="nyama_choma">Nyama Choma (Lunch/Dinner) - KSh 1,800</option>
+                                        <option value="pizza">Pizza (Lunch/Dinner) - KSh 900</option>
+                                        <option value="spaghetti_bolognese">Spaghetti Bolognese (Lunch/Dinner) - KSh 850</option>
+                                        <option value="buffet">Buffet (All Meals) - KSh 2,500 per person</option>
+                                    </select>
+                                    <input type="number" id="mealQuantity" placeholder="Quantity">
+                                    <div class="sp-input-wrap"><input type="email" id="orderEmail" placeholder="Your Email"></div>
+                                    <button onclick="sendOrderEmail()">Send Meal Order</button>
+                                </section>
+                            </div>
+                        </div>
+                    
+                        <!-- Hotel 2: Dove Nest Lodge -->
+                        <div class="hotel-item">
+                            <button onclick="toggleHotelDetails('doveNest')" class="hotel-button">
+                                <img src="images/61.jpg" alt="Dove Nest Lodge" class="hotel-image">
+                            </button>
+                            <div id="doveNestDetails" class="hotel-details" style="display: none;">
+                                <p><strong>Room Types:</strong></p>
+                                <ul>
+                                    <li>Luxury Room - KSh 12,500 per night</li>
+                                    <li>Standard Room - KSh 9,000 per night</li>
+                                    <li>Executive Suite - KSh 18,000 per night</li>
+                                </ul>
+                                <section class="booking-form">
+                                    <h2>Book a Room</h2>
+                                    <label for="roomType">Room Type:</label>
+                                    <select id="roomType">
+                                        <option>Luxury Room - KSh 12,500 per night</option>
+                                        <option>Standard Room - KSh 9,000 per night</option>
+                                        <option>Executive Suite - KSh 18,000 per night</option>
+                                    </select>
+                                    <label for="boardOption">Board Option:</label>
+                                    <select id="boardOption">
+                                        <option>Bed Only</option>
+                                        <option>Half Board (Bed + Breakfast + Dinner) - KSh 4,500 extra</option>
+                                        <option>Full Board (Bed + All Meals) - KSh 9,000 extra</option>
+                                    </select>
+                                    <div class="sp-input-wrap"><input type="text" id="fullName" placeholder="Full Name"></div>
+                                    <input type="number" id="numGuests" placeholder="Number of Guests">
+                                    <input type="date" id="checkInDate" placeholder="Check-in Date">
+                                    <input type="date" id="checkOutDate" placeholder="Check-out Date">
+                                    <div class="sp-input-wrap"><input type="email" id="userEmail" placeholder="Your Email"></div>
+                                    <button onclick="sendBookingEmail('Dove Nest Lodge')">Send Booking Email</button>
+                                </section>
+                                <section class="restaurant-menu">
+                                    <h2>Restaurant Menu</h2>
+                                    <label for="mealType">Meal Type:</label>
+                                    <select id="mealType">
+                                        <option>Breakfast</option>
+                                        <option>Lunch</option>
+                                        <option>Dinner</option>
+                                    </select>
+                                    <label for="mealChoice">Meal Choice:</label>
+                                    <select id="mealChoice">
+                                        <option value="omelette">Omelette (Breakfast) - KSh 500</option>
+                                        <option value="eggs_bacon">Eggs & Bacon (Breakfast) - KSh 600</option>
+                                        <option value="pancakes">Pancakes (Breakfast) - KSh 700</option>
+                                        <option value="grilled_chicken">Grilled Chicken (Lunch/Dinner) - KSh 1,200</option>
+                                        <option value="vegetarian_pasta">Vegetarian Pasta (Lunch/Dinner) - KSh 1,000</option>
+                                        <option value="beef_steak">Beef Steak (Lunch/Dinner) - KSh 1,500</option>
+                                        <option value="seafood_platter">Seafood Platter (Lunch/Dinner) - KSh 2,000</option>
+                                        <option value="nyama_choma">Nyama Choma (Lunch/Dinner) - KSh 1,800</option>
+                                        <option value="pizza">Pizza (Lunch/Dinner) - KSh 900</option>
+                                        <option value="spaghetti_bolognese">Spaghetti Bolognese (Lunch/Dinner) - KSh 850</option>
+                                        <option value="buffet">Buffet (All Meals) - KSh 2,500 per person</option>
+                                    </select>
+                                    <input type="number" id="mealQuantity" placeholder="Quantity">
+                                    <div class="sp-input-wrap"><input type="email" id="orderEmail" placeholder="Your Email"></div>
+                                    <button onclick="sendOrderEmail()">Send Meal Order</button>
+                                </section>
+                            </div>
+                        </div>
+                    
+                        <!-- Add more hotels here following the same structure -->
+                    </section>
+                    
+                    <script>
+                        // Toggle details visibility when hotel image is clicked
+                        function toggleHotelDetails(hotel) {
+                            var detailsElement = document.getElementById(hotel + "Details");
+                            
+                            // Toggle the display of the hotel details
+                            if (detailsElement.style.display === "none" || detailsElement.style.display === "") {
+                                detailsElement.style.display = "block";
+                            } else {
+                                detailsElement.style.display = "none";
+                            }
+                        }
+                    
+                        // Send booking email
+                        function sendBookingEmail(hotel) {
+                            var roomType = document.getElementById("roomType").value;
+                            var boardOption = document.getElementById("boardOption").value;
+                            var fullName = document.getElementById("fullName").value;
+                            var numGuests = document.getElementById("numGuests").value;
+                            var checkInDate = document.getElementById("checkInDate").value;
+                            var checkOutDate = document.getElementById("checkOutDate").value;
+                            var userEmail = document.getElementById("userEmail").value;
+                    
+                            var subject = "Room Booking Request - " + hotel;
+                            var body = `
+                                Hotel: ${hotel}
+                                Room Type: ${roomType}
+                                Board Option: ${boardOption}
+                                Name: ${fullName}
+                                Number of Guests: ${numGuests}
+                                Check-in Date: ${checkInDate}
+                                Check-out Date: ${checkOutDate}
+                                Email: ${userEmail}
+                            `;
+                            window.location.href = "mailto:sceneflicks@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+                        }
+                    
+                        // Send meal order email
+                        function sendOrderEmail() {
+                            var mealType = document.getElementById("mealType").value;
+                            var mealChoice = document.getElementById("mealChoice").value;
+                            var mealQuantity = document.getElementById("mealQuantity").value;
+                            var orderEmail = document.getElementById("orderEmail").value;
+                    
+                            var subject = "Meal Order Request";
+                            var body = `
+                                Meal Type: ${mealType}
+                                Meal Choice: ${mealChoice}
+                                Quantity: ${mealQuantity}
+                                Email: ${orderEmail}
+                            `;
+                            window.location.href = "mailto:sceneflicks@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+                        }
+                    </script>
+                    
+                    
+                    
+       
 					
 
-				</div></div></div></div></div></div></div></section><section id="section-id-1694344412799" class="sppb-section" ><div class="sppb-row-overlay"></div><div class="sppb-row-container"><div class="sppb-row"><div class="sppb-col-md-12  " id="column-wrap-id-1694344412811"><div id="column-id-1694344412811" class="sppb-column " ><div class="sppb-column-addons"><div id="sppb-addon-wrapper-1694344412812" class="sppb-addon-wrapper  addon-root-heading"><div id="sppb-addon-1694344412812" class="clearfix  "     ><div class="sppb-addon sppb-addon-header text-color-op6 sppb-text-center"><h2 class="sppb-addon-title">Scene Flicks Hotel - Naivasha</h2></div></div></div><div id="sppb-addon-wrapper-1694344412813" class="sppb-addon-wrapper  addon-root-heading"><div id="sppb-addon-1694344412813" class="clearfix  "     ><div class="sppb-addon sppb-addon-header text-color-dark6 sppb-text-center"><h3 class="sppb-addon-title">Embracing Natures Glamour</h3></div></div></div><div id="sppb-addon-wrapper-1694344412814" class="sppb-addon-wrapper  addon-root-divider"><div id="sppb-addon-1694344412814" class="clearfix  "     ><div class="sppb-addon-divider-wrap divider-position"><div class="sppb-divider sppb-divider-border link-color-opt3" role="none"></div></div></div></div></div></div></div></div></div></section><section id="section-id-1694344494057" class="sppb-section" ><div class="sppb-row-overlay"></div><div class="sppb-row-container"><div class="sppb-row"><div class="sppb-col-md-4 sppb-col-sm-6  " id="column-wrap-id-1694344494066"><div id="column-id-1694344494066" class="sppb-column " ><div class="sppb-column-addons"><div id="sppb-addon-wrapper-1694344494067" class="sppb-addon-wrapper  addon-root-person"><div id="sppb-addon-1694344494067" class="clearfix  "     ><div class="sppb-addon sppb-addon-person sppb-text-center  "><div class="sppb-addon-content"><div class="sppb-person-image"><img class="sppb-img-responsive" src="../../images/2025/07/27/dnl-rest3-1.jpg" alt="Finger licking specials"><div class="person-content-show-on-hover"><div class="person-content-hover-content-wrap"></div></div></div><div class="sppb-person-information"><span class="sppb-person-name">Accommodation specials</span></div><div class="sppb-person-introtext">Our executive rooms and suites are luxurious, and offer the ultimate comfort holiday seeker who is looking for a serene environmentl <hr>  <p><a href="cuisine.html">Visit photo gallery </a></p></div></div></div></div></div><div id="sppb-addon-wrapper-1694344494068" class="sppb-addon-wrapper  addon-root-empty-space"><div id="sppb-addon-1694344494068" class="clearfix  "     ><div class="sppb-empty-space  clearfix"></div></div></div><div id="sppb-addon-wrapper-1694344494069" class="sppb-addon-wrapper  addon-root-person"><div id="sppb-addon-1694344494069" class="clearfix  "     ><div class="sppb-addon sppb-addon-person sppb-text-center  "><div class="sppb-addon-content"><div class="sppb-person-image"><img class="sppb-img-responsive" src="../../images/2025/03/24/birthday.jpg" alt="Events "></div><div class="sppb-person-information"><span class="sppb-person-name">Events </span><span class="sppb-person-designation">We do it like no other  Weddings | Graduation & Birthday Parties | Team Building | Family Outings </span></div><div class="sppb-person-introtext"><hr>  <p><a href="events.html">Visit photo gallery </a></p></div></div></div></div></div></div></div></div><div class="sppb-col-md-4 sppb-col-sm-6  " id="column-wrap-id-1694344494070"><div id="column-id-1694344494070" class="sppb-column " ><div class="sppb-column-addons"><div id="sppb-addon-wrapper-1694344494071" class="sppb-addon-wrapper  addon-root-person"><div id="sppb-addon-1694344494071" class="clearfix  "     ><div class="sppb-addon sppb-addon-person sppb-text-center  "><img class="sppb-img-responsive" src="../../images/2025/07/27/single.jpg" alt="Finger licking specials"></div></div></div><div id="sppb-addon-wrapper-1694344494073" class="sppb-addon-wrapper  addon-root-person"><div id="sppb-addon-1694344494073" class="clearfix  "     ><div class="sppb-addon sppb-addon-person sppb-text-center  "><div class="sppb-addon-content"><div class="sppb-person-image"><img class="sppb-img-responsive" src="../../images/2025/03/23/naivasha-camping.jpg" alt="Camping & Excursions"></div><div class="sppb-person-information"><span class="sppb-person-name">Camping & Excursions</span></div><div class="sppb-person-introtext">Reconnect with nature - Experience the relaxing ambiance in the woods as you reconnect with nature in camps and  nearby excursion sites.
+				</div></div></div></div></div></div></div></section><section id="section-id-1694344412799" class="sppb-section" ><div class="sppb-row-overlay"></div><div class="sppb-row-container"><div class="sppb-row"><div class="sppb-col-md-12  " id="column-wrap-id-1694344412811"><div id="column-id-1694344412811" class="sppb-column " ><div class="sppb-column-addons"><div id="sppb-addon-wrapper-1694344412812" class="sppb-addon-wrapper  addon-root-heading"><div id="sppb-addon-1694344412812" class="clearfix  "     ><div class="sppb-addon sppb-addon-header text-color-op6 sppb-text-center"><h2 class="sppb-addon-title">Scene Flicks Hotel - Naivasha</h2></div></div></div><div id="sppb-addon-wrapper-1694344412813" class="sppb-addon-wrapper  addon-root-heading"><div id="sppb-addon-1694344412813" class="clearfix  "     ><div class="sppb-addon sppb-addon-header text-color-dark6 sppb-text-center"><h3 class="sppb-addon-title">Embracing Natures Glamour</h3></div></div></div><div id="sppb-addon-wrapper-1694344412814" class="sppb-addon-wrapper  addon-root-divider"><div id="sppb-addon-1694344412814" class="clearfix  "     ><div class="sppb-addon-divider-wrap divider-position"><div class="sppb-divider sppb-divider-border link-color-opt3" role="none"></div></div></div></div></div></div></div></div></div></section><section id="section-id-1694344494057" class="sppb-section" ><div class="sppb-row-overlay"></div><div class="sppb-row-container"><div class="sppb-row"><div class="sppb-col-md-4 sppb-col-sm-6  " id="column-wrap-id-1694344494066"><div id="column-id-1694344494066" class="sppb-column " ><div class="sppb-column-addons"><div id="sppb-addon-wrapper-1694344494067" class="sppb-addon-wrapper  addon-root-person"><div id="sppb-addon-1694344494067" class="clearfix  "     ><div class="sppb-addon sppb-addon-person sppb-text-center  "><div class="sppb-addon-content"><div class="sppb-person-image"><img class="sppb-img-responsive" src="../../images/2025/07/27/dnl-rest3-1.jpg" alt="Peppercorn Resort"><div class="person-content-show-on-hover"><div class="person-content-hover-content-wrap"></div></div></div><div class="sppb-person-information"><span class="sppb-person-name">Accommodation specials</span></div><div class="sppb-person-introtext">Our executive rooms and suites are luxurious, and offer the ultimate comfort holiday seeker who is looking for a serene environmentl <hr>  <p><a href="peppercornresort.html">Visit photo gallery </a></p></div></div></div></div></div><div id="sppb-addon-wrapper-1694344494068" class="sppb-addon-wrapper  addon-root-empty-space"><div id="sppb-addon-1694344494068" class="clearfix  "     ><div class="sppb-empty-space  clearfix"></div></div></div><div id="sppb-addon-wrapper-1694344494069" class="sppb-addon-wrapper  addon-root-person"><div id="sppb-addon-1694344494069" class="clearfix  "     ><div class="sppb-addon sppb-addon-person sppb-text-center  "><div class="sppb-addon-content"><div class="sppb-person-image"><img class="sppb-img-responsive" src="../../images/2025/03/24/birthday.jpg" alt="Events "></div><div class="sppb-person-information"><span class="sppb-person-name">Events </span><span class="sppb-person-designation">We do it like no other  Weddings | Graduation & Birthday Parties | Team Building | Family Outings </span></div><div class="sppb-person-introtext"><hr>  <p><a href="events.html">Visit photo gallery </a></p></div></div></div></div></div></div></div></div><div class="sppb-col-md-4 sppb-col-sm-6  " id="column-wrap-id-1694344494070"><div id="column-id-1694344494070" class="sppb-column " ><div class="sppb-column-addons"><div id="sppb-addon-wrapper-1694344494071" class="sppb-addon-wrapper  addon-root-person"><div id="sppb-addon-1694344494071" class="clearfix  "     ><div class="sppb-addon sppb-addon-person sppb-text-center  "><img class="sppb-img-responsive" src="../../images/2025/07/27/single.jpg" alt="Peppercorn Resort"></div></div></div><div id="sppb-addon-wrapper-1694344494073" class="sppb-addon-wrapper  addon-root-person"><div id="sppb-addon-1694344494073" class="clearfix  "     ><div class="sppb-addon sppb-addon-person sppb-text-center  "><div class="sppb-addon-content"><div class="sppb-person-image"><img class="sppb-img-responsive" src="../../images/2025/03/23/naivasha-camping.jpg" alt="Camping & Excursions"></div><div class="sppb-person-information"><span class="sppb-person-name">Camping & Excursions</span></div><div class="sppb-person-introtext">Reconnect with nature - Experience the relaxing ambiance in the woods as you reconnect with nature in camps and  nearby excursion sites.
 <hr>  <p><a href="camping.html">Visit photo gallery</a></p></div></div></div></div></div><div id="sppb-addon-wrapper-1694685174622" class="sppb-addon-wrapper  addon-root-person"><div id="sppb-addon-1694685174622" class="clearfix  "     ><div class="sppb-addon sppb-addon-person sppb-text-center  "><div class="sppb-addon-content"><div class="sppb-person-image"><img class="sppb-img-responsive" src="../../images/2025/09/14/bars3.jpg" alt="Bars & Restaurants"></div><div class="sppb-person-information"><span class="sppb-person-name">Bars & Restaurants</span></div><div class="sppb-person-introtext">Indulge in Culinary Bliss - Our culinary symphony harmonizes flavor, ambiance, and service, crafting unforgettable moments in every sip and bite. Join us for an epicurean journey in our 
 Restaurant, Bush Bar and Pool Bar
  <hr>  <p><a href="bars.html">Visit photo gallery</a></p></div></div></div></div></div></div></div></div><div class="sppb-col-md-4 sppb-col-sm-6  " id="column-wrap-id-1694344494074"><div id="column-id-1694344494074" class="sppb-column " ><div class="sppb-column-addons"><div id="sppb-addon-wrapper-1694344494075" class="sppb-addon-wrapper  addon-root-person"><div id="sppb-addon-1694344494075" class="clearfix  "     ><div class="sppb-addon sppb-addon-person sppb-text-center  "><div class="sppb-addon-content"><div class="sppb-person-image"><img class="sppb-img-responsive" src="../../images/2025/03/29/conference.jpg" alt="Conferencing Facilities"></div><div class="sppb-person-information"><span class="sppb-person-name">Conferencing Facilities</span></div><div class="sppb-person-introtext"> Your premier destination for seamless conferences, crafting connections, and unveiling excellence. Join us  today <hr>  <p><a href="conference.html">Visit photo gallery </a></p></div></div></div></div></div><div id="sppb-addon-wrapper-1694344494076" class="sppb-addon-wrapper  addon-root-empty-space"><div id="sppb-addon-1694344494076" class="clearfix  "     ><div class="sppb-empty-space  clearfix"></div></div></div><div id="sppb-addon-wrapper-1694344494077" class="sppb-addon-wrapper  addon-root-person"><div id="sppb-addon-1694344494077" class="clearfix  "     ><div class="sppb-addon sppb-addon-person sppb-text-center  "><div class="sppb-addon-content"><div class="sppb-person-image"><img class="sppb-img-responsive" src="../../images/2025/09/12/dnl-gym1-1.jpg" alt="State-of-the-art amenities"></div><div class="sppb-person-information"><span class="sppb-person-name">State-of-the-art amenities</span></div><div class="sppb-person-introtext">accommodation | swimming pool | bar and restaurant | team building grounds | conference facilities | events grounds  <hr>  <p><a href="amenities.html">Visit photo gallery </a></p></div></div></div></div></div></div></div></div></div></div></section>
