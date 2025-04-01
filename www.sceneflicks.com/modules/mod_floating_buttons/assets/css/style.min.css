@@ -17,7 +17,7 @@
     position:fixed;
     right:0px;
     bottom:0px;
-    pointer-events:none;
+    pointer-dovenestlodge:none;
 }
 .jfab_btns_wrapper {
     right:0;
@@ -30,7 +30,7 @@
     -ms-transition:opacity 0.3s ease-in;
     -o-transition:opacity 0.3s ease-in;
     transition:opacity 0.3s ease-in;
-    pointer-events:all;
+    pointer-dovenestlodge:all;
 }
 .jfab_btns_wrapper .show {
     display:block;
@@ -50,7 +50,7 @@
     font-size:19px;
     box-shadow:0 4px 17px 0 rgba(0,0,0,0.14),0 1px 32px 0 rgba(0,0,0,0.12),0 2px 9px -1px rgba(0,0,0,0.2);
     transition:.6s;
-    pointer-events:all;
+    pointer-dovenestlodge:all;
     cursor:pointer;
     -moz-transform:scale(0.1);
     -webkit-transform:scale(0.1);
@@ -94,7 +94,7 @@ button.jfab_main_btn {
     transition:.3s;
     -webkit-tap-highlight-color:transparent;
     cursor:pointer;
-    pointer-events:all;
+    pointer-dovenestlodge:all;
 }
 button.jfab_main_btn .main_item_icon_custom {
     width:40px !important;

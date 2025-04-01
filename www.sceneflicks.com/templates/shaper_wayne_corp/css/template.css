@@ -1259,7 +1259,7 @@ input[type="text"]:not(.form-control):focus, input[type="email"]:not(.form-contr
   right: 40px;
   transform: translateY(-50%);
   z-index: 10;
-  pointer-events: none;
+  pointer-dovenestlodge: none;
   opacity: 0;
   transition: 0.3s;
   color: #ff8800;
@@ -4214,7 +4214,7 @@ html.coming-soon .social-icons li a:hover {
   top: 5px;
   opacity: 0;
   transition: 0.3s;
-  pointer-events: none;
+  pointer-dovenestlodge: none;
   font-size: 11px;
 }
 .sp-input-wrap.active span {

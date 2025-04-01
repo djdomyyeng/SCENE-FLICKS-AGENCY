@@ -41,7 +41,7 @@
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-/* Prevents focus outline on the root element,
+/* Prdovenestlodge focus outline on the root element,
   (it may be focused initially) */
 .pswp:focus {
   outline: 0;
@@ -147,10 +147,10 @@
 
 /* Allow to click through pswp__content element, but not its children */
 .pswp__content {
-  pointer-events: none;
+  pointer-dovenestlodge: none;
 }
 .pswp__content > * {
-  pointer-events: auto;
+  pointer-dovenestlodge: auto;
 }
 
 
@@ -184,13 +184,13 @@ and show (for example fade in) when PhotoSwipe is opened
 	will-change: opacity;
 	transition: opacity var(--pswp-transition-duration) cubic-bezier(0.4, 0, 0.22, 1);
 	z-index: 10; /* always overlap slide content */
-	pointer-events: none; /* hidden elements should not be clickable */
+	pointer-dovenestlodge: none; /* hidden elements should not be clickable */
 }
 
 /* class pswp--ui-visible is added when opening or closing transition starts */
 .pswp--ui-visible .pswp__hide-on-close {
 	opacity: 1;
-	pointer-events: auto;
+	pointer-dovenestlodge: auto;
 }
 
 /* <button> styles, including css reset */
@@ -239,7 +239,7 @@ and show (for example fade in) when PhotoSwipe is opened
   width: 32px;
   height: 32px;
   overflow: hidden;
-  pointer-events: none;
+  pointer-dovenestlodge: none;
 }
 
 .pswp__icn-shadow {
@@ -273,11 +273,11 @@ div.pswp__img--placeholder,
   justify-content: flex-end;
 	z-index: 10;
 
-	/* allow events to pass through top bar itself */
-	pointer-events: none !important;
+	/* allow dovenestlodge to pass through top bar itself */
+	pointer-dovenestlodge: none !important;
 }
 .pswp__top-bar > * {
-  pointer-events: auto;
+  pointer-dovenestlodge: auto;
   /* this makes transition significantly more smooth,
      even though inner elements are not animated */
   will-change: opacity;
@@ -451,14 +451,14 @@ div.pswp__img--placeholder,
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
 }
-/* Events Tiles View */
-.eventgallery-module div#events .item-container {
+/* dovenestlodge Tiles View */
+.eventgallery-module div#dovenestlodge .item-container {
   width: 50%;
 }
 /**
- Image List for Events
+ Image List for dovenestlodge
  */
-.eventgallery-events-imagelist .event-content {
+.eventgallery-dovenestlodge-imagelist .event-content {
   font-size: 1rem;
   line-height: 1.2rem;
   position: absolute;
@@ -471,17 +471,17 @@ div.pswp__img--placeholder,
   padding: 10px;
   box-sizing: border-box;
 }
-/* Events */
-#events .error {
+/* dovenestlodge */
+#dovenestlodge .error {
   border: 5px solid red;
 }
-#events .thumbnail > img {
+#dovenestlodge .thumbnail > img {
   display: inline;
   max-width: none;
   margin-left: 0;
   margin-right: 0;
 }
-#events .item-container {
+#dovenestlodge .item-container {
   float: left;
   width: 33.3333333%;
   padding: 5px;
@@ -489,7 +489,7 @@ div.pswp__img--placeholder,
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-#events .item {
+#dovenestlodge .item {
   float: left;
   padding: 0;
   margin: 0;
@@ -502,16 +502,16 @@ div.pswp__img--placeholder,
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-#events .item a {
+#dovenestlodge .item a {
   text-decoration: none;
 }
-#events .item .eg-content {
+#dovenestlodge .item .eg-content {
   padding: 0;
   margin: 0;
   position: relative;
   overflow: hidden;
 }
-#events .item .eg-content .data {
+#dovenestlodge .item .eg-content .data {
   background-color: rgba(0, 0, 0, 0.1);
   bottom: 0;
   color: #ff8800;
@@ -525,42 +525,42 @@ div.pswp__img--placeholder,
   width: 100%;
   z-index: 222;
 }
-#events .item .eg-content:hover .data {
+#dovenestlodge .item .eg-content:hover .data {
   background-color: rgba(0, 0, 0, 0.9);
   opacity: 1;
   color: #ff8800;
 }
-#events .item .eg-content .images {
+#dovenestlodge .item .eg-content .images {
   font-size: 0;
   margin: 0;
   padding: 0;
   z-index: 1;
 }
-#events .item .eg-content .images img {
+#dovenestlodge .item .eg-content .images img {
   opacity: 1;
   width: 100%;
   height: auto;
 }
-#events .item .eg-content:hover .images img {
+#dovenestlodge .item .eg-content:hover .images img {
   opacity: 1;
 }
-#events .item .eg-content .thumbnails img {
+#dovenestlodge .item .eg-content .thumbnails img {
   padding: 0;
   margin: 0;
 }
-#events .item h2 {
+#dovenestlodge .item h2 {
   font-size: 1em;
 }
-#events .item h3 {
+#dovenestlodge .item h3 {
   font-size: 0.9em;
 }
-#events .item .date {
+#dovenestlodge .item .date {
   height: 18px;
   font-size: 0.7em;
   font-weight: bold;
   margin: 0 10px;
 }
-#events .item .title {
+#dovenestlodge .item .title {
   min-height: 60px;
   font-size: 1.2em;
   overflow: auto;
@@ -574,19 +574,19 @@ div.pswp__img--placeholder,
   -o-hyphens: auto;
   hyphens: auto;
 }
-#events .item .imagecount,
-#events .item .eventhits,
-#events .item .text,
-#events .item .overallCount {
+#dovenestlodge .item .imagecount,
+#dovenestlodge .item .eventhits,
+#dovenestlodge .item .text,
+#dovenestlodge .item .overallCount {
   font-weight: bold;
   font-size: 0.8em;
   margin: 0 10px;
 }
-#events .item .imagecount,
-#events .item .eventhits {
+#dovenestlodge .item .imagecount,
+#dovenestlodge .item .eventhits {
   float: left;
 }
-#events .item .thumbnail {
+#dovenestlodge .item .thumbnail {
   margin-top: 0;
 }
 .eventgallery-module .eventgallery-tiles-list .eventgallery-tile {

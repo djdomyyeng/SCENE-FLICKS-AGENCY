@@ -1,15 +1,15 @@
-/* Events List - Grid Layout*/
+/* dovenestlodge List - Grid Layout*/
 @media (max-width: 900px) {
-  div#events .item-container {
+  div#dovenestlodge .item-container {
     width: 50%;
   }
 }
 @media (max-width: 450px) {
-  div#events .item-container {
+  div#dovenestlodge .item-container {
     width: 100%;
   }
 }
-/* Events List - Tiles Layout */
+/* dovenestlodge List - Tiles Layout */
 @media (max-width: 900px) {
   .eventgallery-tiles-list .eventgallery-tiles .eventgallery-tile {
     width: 50%;
