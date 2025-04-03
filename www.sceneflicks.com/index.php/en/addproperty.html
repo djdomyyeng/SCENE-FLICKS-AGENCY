@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en-gb" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="canonical" href="addproperty.html">
+    <base />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta property="og:title" content="Add Property" />
+    <meta name="generator" content="HELIX_ULTIMATE_GENERATOR_TEXT" />
+    <title>Add Property - Scene Flicks Agency</title>
+    <link href="https://www.sceneflicks.com/templates/shaper_wayne_corp/images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet" />
+    <link href="../../templates/shaper_wayne_corp/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../templates/shaper_wayne_corp/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        body {
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            font-weight: 300;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            font-family: 'Work Sans', sans-serif;
+            font-size: 36px;
+            font-weight: 400;
+        }
+        .hero-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .btn-action {
+            background-color: #ff8800;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+            font-size: 14px;
+            margin-top: 15px;
+        }
+        .btn-action:hover {
+            background-color: #e67700;
+        }
+        .btn-back-home {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #ff8800;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 30px;
+        }
+        footer a {
+            color: #ff8800;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        #sp-header {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+            position: relative;
+        }
+        #sp-logo .logo a img {
+            max-width: 150px;
+        }
+        .form-group label {
+            font-weight: bold;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            margin-bottom: 15px;
+        }
+        .form-group textarea {
+            resize: vertical;
+        }
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .image-preview {
+            margin-top: 10px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        .image-preview img {
+            max-width: 100%;
+            max-height: 200px;
+            margin-bottom: 10px;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 28px;
+            }
+            .btn-action {
+                font-size: 12px;
+                padding: 10px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="body-wrapper">
+        <header id="sp-header">
+            <div class="container">
+                <div class="row">
+                    <div id="sp-logo" class="col-12">
+                        <div class="logo">
+                            <a href="index8641.html">
+                                <img src="../../images/sceneflicks-logo.png" alt="Scene Flicks Agency">
+                            </a>
+                        </div>
+                    </div>
+                    <a href="dashboard.html" class="btn-back-home">Back to Dashboard</a>
+                </div>
+            </div>
+        </header>
+
+        <div id="sp-main-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <section class="hero-section">
+                            <h1>Add Your Property</h1>
+                            <form action="submitproperty.html" method="POST" enctype="multipart/form-data">
+                                <div class="form-group">
+                                    <label for="property-name">Property Name</label>
+                                    <input type="text" id="property-name" name="property-name" placeholder="Enter property name" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="property-description">Property Description</label>
+                                    <textarea id="property-description" name="property-description" rows="5" placeholder="Enter property description" required></textarea>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="property-location">Property Location</label>
+                                    <select id="property-location" name="property-location" required>
+                                        <option value="naivasha">Naivasha</option>
+                                        <option value="nakuru">Nakuru</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="property-thumbnail">Property Thumbnail</label>
+                                    <input type="file" id="property-thumbnail" name="property-thumbnail" accept="image/*" onchange="previewImage(this, 'thumbnail-preview')" required>
+                                    <div id="thumbnail-preview" class="image-preview"></div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="property-cover">Property Cover Photo</label>
+                                    <input type="file" id="property-cover" name="property-cover" accept="image/*" onchange="previewImage(this, 'cover-preview')" required>
+                                    <div id="cover-preview" class="image-preview"></div>
+                                </div>
+
+                                <!-- Swimming Pool Images -->
+                                <div class="form-group">
+                                    <label for="baby-pool">Baby Pool Image</label>
+                                    <input type="file" id="baby-pool" name="baby-pool" accept="image/*" onchange="previewImage(this, 'baby-pool-preview')" required>
+                                    <div id="baby-pool-preview" class="image-preview"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="adult-pool">Adult Pool Image</label>
+                                    <input type="file" id="adult-pool" name="adult-pool" accept="image/*" onchange="previewImage(this, 'adult-pool-preview')" required>
+                                    <div id="adult-pool-preview" class="image-preview"></div>
+                                </div>
+
+                                <!-- Room Images -->
+                                <h3>Room Types</h3>
+                                <!-- Standard Room Images -->
+                                <div class="form-group">
+                                    <label for="standard-room">Standard Room Images (3 images)</label>
+                                    <input type="file" id="standard-room" name="standard-room[]" accept="image/*" multiple onchange="previewImage(this, 'standard-room-preview')" required>
+                                    <div id="standard-room-preview" class="image-preview"></div>
+                                </div>
+                                <!-- Deluxe Room Images -->
+                                <div class="form-group">
+                                    <label for="deluxe-room">Deluxe Room Images (3 images)</label>
+                                    <input type="file" id="deluxe-room" name="deluxe-room[]" accept="image/*" multiple onchange="previewImage(this, 'deluxe-room-preview')" required>
+                                    <div id="deluxe-room-preview" class="image-preview"></div>
+                                </div>
+                                <!-- Cottages Room Images -->
+                                <div class="form-group">
+                                    <label for="cottages-room">Cottages Room Images (3 images)</label>
+                                    <input type="file" id="cottages-room" name="cottages-room[]" accept="image/*" multiple onchange="previewImage(this, 'cottages-room-preview')" required>
+                                    <div id="cottages-room-preview" class="image-preview"></div>
+                                </div>
+                                <!-- Executive Rooms Images -->
+                                <div class="form-group">
+                                    <label for="executive-room">Executive Room Images (3 images)</label>
+                                    <input type="file" id="executive-room" name="executive-room[]" accept="image/*" multiple onchange="previewImage(this, 'executive-room-preview')" required>
+                                    <div id="executive-room-preview" class="image-preview"></div>
+                                </div>
+                                <!-- Business Suite Images -->
+                                <div class="form-group">
+                                    <label for="business-suite">Business Suite Images (3 images)</label>
+                                    <input type="file" id="business-suite" name="business-suite[]" accept="image/*" multiple onchange="previewImage(this, 'business-suite-preview')" required>
+                                    <div id="business-suite-preview" class="image-preview"></div>
+                                </div>
+
+                                <!-- Additional Facilities -->
+                                <div class="form-group">
+                                    <label for="kitchen">Kitchen Image</label>
+                                    <input type="file" id="kitchen" name="kitchen" accept="image/*" onchange="previewImage(this, 'kitchen-preview')" required>
+                                    <div id="kitchen-preview" class="image-preview"></div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="garden">Garden Image</label>
+                                    <input type="file" id="garden" name="garden" accept="image/*" onchange="previewImage(this, 'garden-preview')" required>
+                                    <div id="garden-preview" class="image-preview"></div>
+                                </div>
+
+                                <!-- Reception Image -->
+                                <div class="form-group">
+                                    <label for="reception">Reception Area Image</label>
+                                    <input type="file" id="reception" name="reception" accept="image/*" onchange="previewImage(this, 'reception-preview')" required>
+                                    <div id="reception-preview" class="image-preview"></div>
+                                </div>
+
+                                <!-- Conference Area Images -->
+                                <div class="form-group">
+                                    <label for="conference">Conference Area Images (4 images)</label>
+                                    <input type="file" id="conference" name="conference[]" accept="image/*" multiple onchange="previewImage(this, 'conference-preview')" required>
+                                    <div id="conference-preview" class="image-preview"></div>
+                                </div>
+
+                                <!-- Tent Images -->
+                                <div class="form-group">
+                                    <label for="tents">Tents Images (4 images)</label>
+                                    <input type="file" id="tents" name="tents[]" accept="image/*" multiple onchange="previewImage(this, 'tents-preview')" required>
+                                    <div id="tents-preview" class="image-preview"></div>
+                                </div>
+
+                                <!-- Meal Plans & Prices -->
+                                <div class="form-group">
+                                    <label for="meal-plan-price">Price for Meal Plan</label>
+                                    <input type="number" id="meal-plan-price" name="meal-plan-price" placeholder="Enter meal plan price" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="bed-only-price">Price for Bed Only</label>
+                                    <input type="number" id="bed-only-price" name="bed-only-price" placeholder="Enter bed only price" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="half-board-price">Price for Half Board</label>
+                                    <input type="number" id="half-board-price" name="half-board-price" placeholder="Enter half board price" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="full-board-price">Price for Full Board</label>
+                                    <input type="number" id="full-board-price" name="full-board-price" placeholder="Enter full board price" required>
+                                </div>
+
+                                <!-- Rules, Policies, and Confirmation -->
+                                <div class="form-group">
+                                    <label for="hotel-rules">Hotel Rules</label>
+                                    <textarea id="hotel-rules" name="hotel-rules" rows="5" placeholder="Enter hotel rules" required></textarea>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="cancellation-policy">Cancellation Policy</label>
+                                    <textarea id="cancellation-policy" name="cancellation-policy" rows="5" placeholder="Enter cancellation policy" required></textarea>
+                                </div>
+
+                                <!-- Submit Button -->
+                                <div class="form-group">
+                                    <button type="submit" class="btn-action">Confirm & Save to Public</button>
+                                </div>
+                            </form>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Scene Flicks Agency. All Rights Reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms & Conditions</a></p>
+        </footer>
+    </div>
+
+    <script>
+        function previewImage(input, previewId) {
+            const file = input.files[0];
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const preview = document.getElementById(previewId);
+                preview.innerHTML = `<img src="${e.target.result}" alt="Preview">`;
+            }
+            reader.readAsDataURL(file);
+        }
+    </script>
+</body>
+</html>
