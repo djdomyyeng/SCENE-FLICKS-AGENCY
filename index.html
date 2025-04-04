@@ -11,7 +11,7 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    overflow: auto;
+    overflow-x: hidden; /* Prevent horizontal overflow */
     scroll-behavior: smooth;
 }
 
@@ -21,229 +21,97 @@ html, body {
     padding: 20px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 #sp-header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
-.sp-megamenu-wrapper {
+
+#sp-logo {
+    flex-grow: 1;
     display: flex;
+    justify-content: center;
+    margin-bottom: 10px; /* Add some margin at the bottom to give space on smaller screens */
 }
+
+#sp-menu1, #sp-menu2 {
+    display: flex;
+    flex-wrap: wrap; /* Allow the menu to wrap */
+    justify-content: space-between;
+    width: 100%; /* Full width to prevent overflow */
+}
+
 .sp-megamenu-parent {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
+    flex-wrap: wrap; /* Wrap items on smaller screens */
 }
+
 .sp-menu-item {
     margin: 0 15px;
     position: relative;
     transition: transform 0.3s ease-in-out, color 0.3s ease;
-}
-.sp-menu-item a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.1em;
-    position: relative;
-    display: inline-block;
-    padding: 10px 0;
-    font-weight: 600;
-    letter-spacing: 1px;
-}
-.sp-menu-item a:hover {
-    color: #ff8800;
-}
-.sp-menu-item a::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0%;
-    height: 2px;
-    background-color: #ff8800;
-    transition: width 0.3s ease;
-}
-.sp-menu-item a:hover::before {
-    width: 100%;
+    flex: 1; /* Allow menu items to grow and wrap */
 }
 
-/* Cute Hover Effect */
-.sp-menu-item:hover {
-    transform: scale(1.1);
-}
-
-/* Centered Logo */
-#sp-logo {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-}
-.logo-image {
-    max-width: 200px;
-    transition: transform 0.3s ease, filter 0.3s ease;
-}
-.logo-image:hover {
-    transform: scale(1.1);
-    filter: brightness(1.2);
-}
-
-/* Footer Styles */
-footer {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-footer p {
-    font-size: 1.1em;
-}
-footer .social-icons a {
-    color: white;
-    margin: 0 10px;
-    font-size: 1.5em;
-    text-decoration: none;
-}
-footer .social-icons a:hover {
-    color: #ff8800;
-}
-
-/* Main Content Section */
-.search-section {
-    text-align: center;
-    margin: 30px auto;
-    padding: 20px;
-    max-width: 1000px; /* Set a max-width for better control */
-    background-color: #1f1f1f;
-    border-radius: 12px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-}
-
-.search-section h2 {
-    font-size: 1.8em;
-    font-weight: bold;
-    color: #ff8800;
-    margin-bottom: 20px;
-}
-
-.search-input-box {
-    background: linear-gradient(135deg, #1f1f1f, #3a3a3a);
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0px 0px 20px rgba(255, 136, 0, 0.5);
-    margin-bottom: 30px;
-    display: ;
-    flex-wrap: wrap; /* Allows fields to wrap on smaller screens */
-    justify-content: space-between; /* Spaces the fields out evenly */
-}
-
-.search-input-box label {
-    color: white;
-    font-weight: bold;
-    margin-bottom: 5px;
-    display: block;
-}
-
-/* Input Field Styles */
+/* Input Fields */
 .search-input-box .form-control {
-    width: 100%; /* Ensure the input fields take full width */
-    padding: 12px 25px; /* Adjust padding to give more space inside the input fields */
-    font-size: 1.1em; /* Keep the font size large for clarity */
-    border-radius: 8px; /* Rounded corners for a sleek look */
-    border: 1px solid #ff8800; /* Orange border to match theme */
-    background-color: transparent; /* Transparent background to allow the color pop */
-    color: white; /* Text color */
-    box-sizing: border-box; /* Ensure padding and border are included in the width calculation */
-}
-
-/* Placeholder Text */
-.search-input-box .form-control::placeholder {
-    color: #ff8800; /* Placeholder color to match the theme */
-    opacity: 1; /* Full opacity */
-    font-size: 1.2em; /* Increased font size for better visibility */
-    font-weight: 500; /* Slightly bold for more visibility */
-    letter-spacing: 0.5px; /* Space out letters slightly */
-    text-align: left; /* Align the placeholder text to the left */
-    padding-left: 12px; /* Align placeholder with the input text */
-    max-width: 75%; /* Make the placeholder text cover 3/4 of the input field */
-    white-space: nowrap; /* Prevent the text from wrapping to the next line */
-}
-
-/* Futuristic Input Fields */
-.search-input-box .form-control {
-    width: 48%; /* Set width to 48% for spacing between fields */
-    padding: 10px 15px;
-    font-size: 1.1em;
-    margin: 10px 0;
-    border-radius: 8px;
-    border: 2px solid transparent;
-    background-color: transparent;
-    color: #fff;
-    position: relative;
-    overflow: hidden;
-    box-shadow: inset 0 0 5px rgba(255, 136, 0, 0.4); /* Inner glow for a futuristic look */
-    transition: all 0.3s ease;
-}
-
-/* Focused state for input fields */
-.search-input-box .form-control:focus {
-    border-color: #ff8800;
-    box-shadow: 0 0 10px rgba(255, 136, 0, 0.7), inset 0 0 8px rgba(255, 136, 0, 0.6); /* Outer glow + inner glow */
-    background-color: #333;
-}
-
-/* Date picker and number fields focus */
-input[type="date"], input[type="number"] {
-    border: 2px solid #ff8800;
-    background-color: transparent;
-    color: white;
-    font-size: 1.1em;
+    width: 100%; /* Ensure input fields take full width */
     padding: 12px 25px;
+    font-size: 1.1em;
     border-radius: 8px;
+    border: 1px solid #ff8800;
+    background-color: transparent;
+    color: white;
+    box-sizing: border-box;
 }
 
-input[type="date"]:focus, input[type="number"]:focus {
-    border-color: #ff8800;
-    box-shadow: 0 0 10px rgba(255, 136, 0, 0.7);
-    background-color: #333;
-}
-
-/* Adjust for small screens */
+/* Responsive Adjustments for Small Devices */
 @media (max-width: 768px) {
-    .search-input-box .form-control {
-        width: 100%; /* On small screens, inputs should take full width */
+    #sp-header .container {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+    }
+
+    #sp-logo {
+        margin-bottom: 15px;
+    }
+
+    .sp-megamenu-parent {
+        flex-direction: column;
+        align-items: center;
     }
 
     .search-section h2 {
-        font-size: 1.5em; /* Reduce font size for small devices */
+        font-size: 1.5em;
+    }
+
+    .search-input-box .form-control {
+        width: 100%; /* Inputs will take full width on smaller screens */
+        margin-bottom: 10px;
+    }
+
+    .search-section {
+        padding: 10px;
+    }
+
+    .book-now-button {
+        width: 100%;
+        max-width: 250px;
+        margin: 20px auto 0;
     }
 }
 
-/* Book Now Button */
-.book-now-button {
-    background-color: #ff8800;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 15px 30px;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-    display: inline-block;
-    width: 100%;
-    max-width: 250px; /* Limit the button width */
-    margin: 20px auto 0;
+@media (max-width: 480px) {
+    /* Smaller devices (e.g., smartphones in portrait mode) */
+    .sp-menu-item a {
+        font-size: 1em; /* Slightly reduce font size on very small screens */
+    }
 }
-
-.book-now-button:hover {
-    background-color: white;
-    color: #ff8800;
-    box-shadow: 0px 0px 10px rgba(255, 136, 0, 0.5);
-    transform: scale(1.1);
-}
-
 
     </style>
 </head>
@@ -266,12 +134,15 @@ input[type="date"]:focus, input[type="number"]:focus {
             </div>
 
             <!-- Centered Logo -->
-            <div id="sp-logo" 
-                    class="col-10 col-sm-10 col-md-10 col-lg-2 "><div 
-                    class="sp-column  d-flex align-items-center"><div 
-                    class="logo"><a href="index.html"><img 
-                    class="logo-image d-none d-lg-inline-block" src="../../images/sceneflicks-logo.png" alt="Scene Flicks Agency"><img 
-                    ></div></div>
+            <div id="sp-logo" class="col-10 col-sm-10 col-md-10 col-lg-2">
+                <div class="sp-column d-flex align-items-center">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img class="logo-image d-none d-lg-inline-block" src="../../images/sceneflicks-logo.png" alt="Scene Flicks Agency">
+                        </a>
+                    </div>
+                </div>
+            </div>
 
             <!-- Right Side Menu -->
             <div id="sp-menu2">
@@ -299,38 +170,34 @@ input[type="date"]:focus, input[type="number"]:focus {
             </div>
 
             <!-- New Section with Input Fields -->
-<div class="search-section">
-    <h2>Where do you want to go next?</h2>
-    
-    <!-- Search Input Box -->
-    <div class="search-input-box">
-        <div class="row">
-            <!-- Left: Check-in -->
-            <div class="col-md-4">
-                <label for="checkin">CHECK-IN</label>
-                <input type="date" id="checkin" name="checkin" class="form-control" required>
-            </div>
-            <!-- Center: Guests -->
-            <div class="col-md-4">
-                <label for="pax">GUESTS</label>
-                <input type="number" id="pax" name="pax" class="form-control" placeholder="Number of Guests" min="1" max="10" required>
-            </div>
-            <!-- Right: Check-out -->
-            <div class="col-md-4">
-                <label for="checkout">CHECK-OUT</label>
-                <input type="date" id="checkout" name="checkout" class="form-control" required>
+            <div class="search-section">
+                <h2>Where do you want to go next?</h2>
+                <div class="search-input-box">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label for="checkin">CHECK-IN</label>
+                            <input type="date" id="checkin" name="checkin" class="form-control" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="pax">GUESTS</label>
+                            <input type="number" id="pax" name="pax" class="form-control" placeholder="Number of Guests" min="1" max="10" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="checkout">CHECK-OUT</label>
+                            <input type="date" id="checkout" name="checkout" class="form-control" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Search Now Button -->
+                <div class="row mt-3">
+                    <div class="col-lg-12 text-center">
+                        <a href="/www.sceneflicks.com/index.php/en/bookinghotels.html" class="book-now-button">SEARCH NOW</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-
-    <!-- Search Now Button -->
-    <div class="row mt-3">
-        <div class="col-lg-12 text-center">
-            <a href="/www.sceneflicks.com/index.php/en/bookinghotels.html" class="book-now-button">SEARCH NOW</a>
-        </div>
-    </div>
-</div>
-
+    </section>
 
     <!-- Footer Section -->
     <footer>
